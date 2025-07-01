@@ -1,0 +1,62 @@
+@import './base.css';
+
+#app {
+  display: flex;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  min-height: 100vh;
+  z-index: 0;
+  position: relative;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+
+.a-card {
+  background: var(--vp-c-bg);
+  border-radius: 20px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+.a-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden;
+
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 公共动画类 */
+.fade-item {
+  opacity: 0;
+  animation: fadeInUp 0.2s ease-in-out forwards;
+  animation-delay: var(--delay);
+}
+
