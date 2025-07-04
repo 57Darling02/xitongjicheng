@@ -1,0 +1,39 @@
+{
+  "rewrites": [
+    {
+      "source": "/search_12306/:path*",
+      "destination": "https://search.12306.cn/:path*"
+    },
+    {
+      "source": "/kyfw_12306/:path*",
+      "destination": "https://kyfw.12306.cn/:path*"
+    },
+    {
+      "source": "/www_12306/:path*",
+      "destination": "https://www.12306.cn/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Credentials",
+          "value": "true"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ]
+}
