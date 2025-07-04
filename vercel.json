@@ -11,6 +11,10 @@
     {
       "source": "/www_12306/:path*",
       "destination": "https://www.12306.cn/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
