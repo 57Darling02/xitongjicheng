@@ -1,17 +1,14 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
 import { ElConfigProvider } from 'element-plus'
 </script>
 
 <template>
   <el-config-provider :z-index="3000">
-    <RouterView />
+    <router-view/>
   </el-config-provider>
 </template>
 
 <style>
-
-
 .full_container {
   /* position: absolute;
   top: 0;

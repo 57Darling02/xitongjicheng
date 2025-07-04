@@ -1,4 +1,14 @@
 @import './base.css';
+@import './fontawesome/css/all.min.css';
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
 
 #app {
   display: flex;

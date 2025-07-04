@@ -52,12 +52,13 @@
 import { reactive, useTemplateRef } from 'vue'
 import { Lock, User } from '@element-plus/icons-vue'
 import type { FormInstance } from 'element-plus'
-import router from '@/router'
+import { useUserStore, roles } from '@/store/user'
+const userStore = useUserStore()
 const formRef = useTemplateRef<FormInstance>('formRef')
 const form = reactive({
     username: '',
     password: '',
-    role: 'merchant',
+    role: 'merchant' as (typeof roles)[number],
 })
 const rules = reactive({
     username: [
@@ -73,14 +74,16 @@ const onSubmit = async () => {
     if (!formRef.value) return
     formRef.value.validate((valid: boolean) => {
         if (valid) {
-            ElMessage.success('登录成功');
-            console.log(form)
-            router.push({ name: 'DashBorad' })
+            userStore.login(form.username, form.password, form.role)
+            window.open('/', '_self')
         } else {
             ElMessage.error('登录失败');
         }
     });
 }
+
+
+
 </script>
 <style lang="scss" scoped>
 .login-header {
