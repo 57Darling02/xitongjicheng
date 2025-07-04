@@ -1,33 +1,42 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-const roles = ['admin', 'merchant', 'consumer'] as const
+export const roles = ['admin', 'merchant', 'customer'] as const
 export const useUserStore = defineStore('user', () => {
   const userInfo = ref({
     username: '',
     role: 'merchant' as typeof roles[number]
   })
-
   const isLoggedIn = computed(() => !!userInfo.value.username)
-  const userRole = computed(() => userInfo.value.role)
-
-  function login(username: string, password: string) {
-
-    // 模拟登录验证
-    const mockUsers = {
-      admin: { role: 'admin' },
-      merchant: { role: 'merchant' },
-      consumer: { role: 'consumer' }
-    } as Record<string, { role: typeof roles[number] }>
-    
-    if (mockUsers[username]) {
-      userInfo.value = {
-        username,
-        role: mockUsers[username].role
+  const getPermissions =async () => {
+    try {
+      // Simulate an API call to get permissions based on user role
+      if (!isLoggedIn.value) return []
+      const permissions = {
+        admin: ['1','1-1','1-2'],
+        merchant: ['1'],
+        customer: ['2']
       }
-      localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
-      return true
+      return permissions[userInfo.value.role] || []
+    }catch{
+      return []
     }
-    return false
+    
+  }
+  const hasPermission = async(permission: string) => {
+    const permissions: string[] = await getPermissions()
+    if (!permissions.length) return false
+    return permissions.includes(permission)
+  }
+
+
+  async function login(username: string, password: string, role: (typeof roles)[number]) {
+    if (username == '' || password == '') return false
+    userInfo.value = {
+      username,
+      role: role
+    }
+    localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
+    return true
   }
 
   function logout() {
@@ -41,13 +50,14 @@ export const useUserStore = defineStore('user', () => {
       userInfo.value = JSON.parse(storedUser)
     }
   }
-
+  initUser()
   return {
     userInfo,
     isLoggedIn,
-    userRole,
     login,
     logout,
-    initUser
+    initUser,
+    getPermissions,
+    hasPermission
   }
 })  
