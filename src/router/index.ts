@@ -73,12 +73,52 @@ const routes: RouteRecordRaw[] = [
       },
       {
         path: 'manageOrder',
-        name: 'ManageOrder',
+        name: 'adminManageOrder',
         component: () => import('@/adminApp/views/ManageOrder.vue'),
         meta: {
           requiresAuth: true,
           permission: '1-2',
           title: '订单管理',
+        }
+      },
+      {
+        path: 'manageOrder',
+        name: 'merchantManageOrder',
+        component: () => import('@/merchantApp/views/ManageOrder.vue'),
+        meta: {
+          requiresAuth: true,
+          permission: '1-3',
+          title: '订单管理',
+        }
+      },
+      {
+        path: 'manageCustomer',
+        name: 'ManageCustomer',
+        component: () => import('@/adminApp/views/ManageCustomer.vue'),
+        meta: {
+          requiresAuth: true,
+          permission: '1-2',
+          title: '用户管理',
+        }
+      },
+      {
+        path: 'manageGoods',
+        name: 'ManageGoods',
+        component: () => import('@/merchantApp/views/ManageGoods.vue'),
+        meta: {
+          requiresAuth: true,
+          permission: '1',
+          title: '商品管理',
+        }
+      },
+      {
+        path: 'modifyMerchantInformation',
+        name: 'ModifyMerchantInformation',
+        component: () => import('@/merchantApp/views/ModifyMerchantInformation.vue'),
+        meta: {
+          requiresAuth: true,
+          permission: '1',
+          title: '商家信息管理',
         }
       },
       {

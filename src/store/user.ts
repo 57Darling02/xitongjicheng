@@ -14,7 +14,7 @@ export const useUserStore = defineStore('user', () => {
       if (!isLoggedIn.value) return []
       const permissions = {
         admin: ['1','1-1','1-2'],
-        merchant: ['1'],
+        merchant: ['1','1-3'],
         customer: ['2']
       }
       return permissions[userInfo.value.role] || []
