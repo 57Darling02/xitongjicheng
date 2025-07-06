@@ -43,15 +43,6 @@ const routes: RouteRecordRaw[] = [
     },
     children: [
       {
-        path: 'queryTrainInfo',
-        name: 'queryTrainInfo',
-        component: () => import('@/views/QueryTrainInfo.vue'),
-        meta: {
-          title: '查询车次信息',
-          icon: 'fa-solid fa-train'
-        }
-      },
-      {
         path: 'dashboard',
         name: 'AdminDashboard',
         component: () => import('@/adminApp/views/Dashboard.vue'),
@@ -62,6 +53,15 @@ const routes: RouteRecordRaw[] = [
         },
       },
       {
+        path: 'queryTrainInfo',
+        name: 'queryTrainInfo',
+        component: () => import('@/views/QueryTrainInfo.vue'),
+        meta: {
+          title: '查询车次信息',
+          icon: 'fa-solid fa-train'
+        }
+      },
+      {
         path: 'manageMerchant',
         name: 'ManageMerchant',
         component: () => import('@/adminApp/views/ManageMerchant.vue'),
@@ -69,6 +69,16 @@ const routes: RouteRecordRaw[] = [
           requiresAuth: true,
           permission: '1-2',
           title: '商家管理',
+        }
+      },
+      {
+        path: 'manageOrder',
+        name: 'ManageOrder',
+        component: () => import('@/adminApp/views/ManageOrder.vue'),
+        meta: {
+          requiresAuth: true,
+          permission: '1-2',
+          title: '订单管理',
         }
       },
       {

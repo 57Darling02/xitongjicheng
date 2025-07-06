@@ -54,6 +54,7 @@ declare module 'vue' {
     ElTimePicker: typeof import('element-plus/es')['ElTimePicker']
     Loading: typeof import('./src/components/Loading.vue')['default']
     NotFound: typeof import('./src/components/NotFound.vue')['default']
+    ProfileCard: typeof import('./src/components/ProfileCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
