@@ -1,60 +1,60 @@
 <template>
-  <el-form :model="form" label-width="120px" style="padding: 20px;">
-    <!-- 店铺编号（不可修改） -->
-    <el-form-item label="店铺编号">
+  <el-descriptions title="商家信息" direction="vertical" :column="2" border>
+    
+    <el-descriptions-item label="店铺编号">
       <el-input v-model="form.shopId" disabled />
-    </el-form-item>
-
-    <!-- 店铺名称 -->
-    <el-form-item label="店铺名称">
+    </el-descriptions-item>
+    <el-descriptions-item :rowspan="4" label="头像" align="center">
+      <el-upload class="avatar-uploader" action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+        :show-file-list="false" :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload">
+        <img v-if="imageUrl" :src="imageUrl" class="avatar" style="width: 100px; height: 100px" />
+        <el-icon v-else class="avatar-uploader-icon" style="width: 100px; height: 100px">
+          <Plus />
+        </el-icon>
+      </el-upload>
+    </el-descriptions-item>
+    <el-descriptions-item label="店铺名称">
       <el-input v-model="form.shopName" />
-    </el-form-item>
-
-    <!-- 地理位置 -->
-    <el-form-item label="地理位置">
+    </el-descriptions-item>
+    
+    <el-descriptions-item label="地理位置">
       <el-row :gutter="10">
-        <el-col :span="6">
+        <el-col :span="8">
           <el-select v-model="form.province" placeholder="选择省份">
             <el-option v-for="item in provinceList" :key="item.value" :label="item.label" :value="item.value" />
           </el-select>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="8">
           <el-select v-model="form.city" placeholder="选择城市">
             <el-option v-for="item in cityList" :key="item.value" :label="item.label" :value="item.value" />
           </el-select>
         </el-col>
-        <el-col :span="12">
+        <el-col :span="8">
           <el-input v-model="form.address" placeholder="具体位置" />
         </el-col>
       </el-row>
-    </el-form-item>
-
-    <!-- 对应站点 -->
-    <el-form-item label="对应站点">
+    </el-descriptions-item>
+    <el-descriptions-item label="对应站点">
       <el-select v-model="form.station" placeholder="选择站点">
         <el-option v-for="item in stationList" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
-
-    <!-- 联系方式 -->
-    <el-form-item label="联系方式">
+    </el-descriptions-item>
+    <el-descriptions-item label="联系方式">
       <el-input v-model="form.contact" />
-    </el-form-item>
-
-    <!-- 营业时间 -->
-    <el-form-item label="营业时间">
+    </el-descriptions-item>
+    <el-descriptions-item label="营业时间">
       <el-row :gutter="10">
-        <el-col :span="6">
+        <el-col :span="11">
           <el-time-select v-model="form.businessTimeStart" :picker-options="{
             start: '00:00',
             step: '00:30',
             end: '23:30'
           }" placeholder="开始时间" />
         </el-col>
-        <el-col :span="1">
+        <el-col :span="2">
           <div style="text-align: center; line-height: 32px;">至</div>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="11">
           <el-time-select v-model="form.businessTimeEnd" :picker-options="{
             start: '00:00',
             step: '00:30',
@@ -62,43 +62,37 @@
           }" placeholder="结束时间" />
         </el-col>
       </el-row>
-    </el-form-item>
-
-    <!-- 预计配送时间 -->
-    <el-form-item label="预计配送时间（min）">
+    </el-descriptions-item>
+    <el-descriptions-item label="预计配送时间（min）">
       <el-select v-model="form.deliveryTime" placeholder="选择时间">
         <el-option v-for="item in deliveryTimeList" :key="item.value" :label="item.label" :value="item.value" />
       </el-select>
-    </el-form-item>
-
-    <!-- 详细介绍 -->
-    <el-form-item label="详细介绍">
-      <el-input v-model="form.description" type="textarea" :rows="6" />
-    </el-form-item>
-
-    <!-- 上传图片 -->
-    <el-form-item label="上传图片">
+    </el-descriptions-item>
+    <el-descriptions-item label="详细介绍">
+      <el-input v-model="form.description" type="textarea" :rows="3" />
+    </el-descriptions-item>
+    <el-descriptions-item label="上传图片">
       <el-upload class="upload-demo" action="#" :on-preview="handlePreview" :on-remove="handleRemove"
         :file-list="fileList" list-type="picture">
         <el-button type="primary">点击上传</el-button>
       </el-upload>
-    </el-form-item>
-
-    <!-- 操作按钮 -->
-    <el-form-item>
+    </el-descriptions-item>
+    <el-descriptions-item label="操作" :span="3">
       <el-button type="primary" @click="handleSave">
         保存
       </el-button>
       <el-button @click="handleBack">
         返回
       </el-button>
-    </el-form-item>
-  </el-form>
+    </el-descriptions-item>
+  </el-descriptions>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import type { UploadFile } from 'element-plus'
+import type { UploadFile, UploadProps } from 'element-plus'
+import { ElMessage } from 'element-plus'
+import { Plus } from '@element-plus/icons-vue'
 
 // 表单数据
 const form = ref({
@@ -166,11 +160,60 @@ const handleBack = () => {
   console.log('返回操作')
   // 可实现返回逻辑，如路由跳转
 }
+
+// 头像上传相关
+const imageUrl = ref('')
+
+const handleAvatarSuccess: UploadProps['onSuccess'] = (
+  response,
+  uploadFile
+) => {
+  imageUrl.value = URL.createObjectURL(uploadFile.raw!)
+}
+
+const beforeAvatarUpload: UploadProps['beforeUpload'] = (rawFile) => {
+  if (rawFile.type !== 'image/jpeg') {
+    ElMessage.error('头像图片必须为 JPG 格式！')
+    return false
+  } else if (rawFile.size / 1024 / 1024 > 2) {
+    ElMessage.error('头像图片大小不能超过 2MB！')
+    return false
+  }
+  return true
+}
 </script>
 
 <style scoped>
-/* 可根据需要自定义样式 */
 .upload-demo {
   width: 200px;
+}
+
+.avatar-uploader .avatar {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+</style>
+
+<style>
+.avatar-uploader .el-upload {
+  border: 1px dashed var(--el-border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: var(--el-transition-duration-fast);
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: var(--el-color-primary);
 }
 </style>
