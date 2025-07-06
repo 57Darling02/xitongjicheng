@@ -7,22 +7,13 @@
       <el-button type="primary" @click="handleQuery">查询</el-button>
     </el-space>
     <!-- 表格区域 -->
-    <el-table
-      :data="tableData"
-      style="width: 100%; margin-top: 16px;"
-      border
-    >
+    <el-table :data="tableData" style="width: 100%; margin-top: 16px;" border>
       <!-- 多选框列 -->
       <el-table-column type="selection" width="55" />
       <el-table-column prop="goodsNo" label="商品编号" width="120" />
       <el-table-column prop="goodsImg" label="商品图片" width="120">
         <template #default="scope">
-          <el-image
-            v-if="scope.row.goodsImg"
-            :src="scope.row.goodsImg"
-            style="width: 80px; height: 80px"
-            fit="cover"
-          />
+          <el-image v-if="scope.row.goodsImg" :src="scope.row.goodsImg" style="width: 80px; height: 80px" fit="cover" />
           <span v-else>无图片</span>
         </template>
       </el-table-column>
@@ -51,7 +42,7 @@ const goodsName = ref('');
 const tableData = ref([
   {
     goodsNo: 'G001',
-    goodsImg: 'https://example.com/goods1.jpg', // 实际替换为商品图片地址
+    goodsImg: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg', // 实际替换为商品图片地址
     goodsName: '商品1',
     goodsStock: 10,
     goodsDesc: '商品1的描述',
