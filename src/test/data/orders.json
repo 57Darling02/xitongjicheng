@@ -1,0 +1,2114 @@
+[
+  {
+    "order_id": "202506010639005696",
+    "customer_id": "975197615398680224",
+    "commercial_id": "1064300005",
+    "order_time": "1/6/2025 06:39:00",
+    "total_pay": 80.26000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506010644004384",
+    "customer_id": "74271688035972645X",
+    "commercial_id": "3074300005",
+    "order_time": "1/6/2025 06:44:00",
+    "total_pay": 18.969999313354493,
+    "situation": null
+  },
+  {
+    "order_id": "202506010900008800",
+    "customer_id": "152648796817294732",
+    "commercial_id": "1619600004",
+    "order_time": "1/6/2025 09:00:00",
+    "total_pay": 92.11000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506010915007488",
+    "customer_id": "013486984998774246",
+    "commercial_id": "1619600003",
+    "order_time": "1/6/2025 09:15:00",
+    "total_pay": 77.61000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506011003005696",
+    "customer_id": "152648796817294732",
+    "commercial_id": "3074300005",
+    "order_time": "1/6/2025 10:03:00",
+    "total_pay": 16.399999618530275,
+    "situation": null
+  },
+  {
+    "order_id": "202506011009005184",
+    "customer_id": "880577507260931213",
+    "commercial_id": "3074300005",
+    "order_time": "1/6/2025 10:09:00",
+    "total_pay": 37.439998626708987,
+    "situation": null
+  },
+  {
+    "order_id": "202506020559004608",
+    "customer_id": "540678790729529230",
+    "commercial_id": "1064300005",
+    "order_time": "2/6/2025 05:59:00",
+    "total_pay": 38.61000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506020632004000",
+    "customer_id": "674373175298115609",
+    "commercial_id": "3045200005",
+    "order_time": "2/6/2025 06:32:00",
+    "total_pay": 34.369998931884769,
+    "situation": null
+  },
+  {
+    "order_id": "202506020645002592",
+    "customer_id": "378919826661428946",
+    "commercial_id": "1064300005",
+    "order_time": "2/6/2025 06:45:00",
+    "total_pay": 18.3799991607666,
+    "situation": null
+  },
+  {
+    "order_id": "202506020646003392",
+    "customer_id": "033507363545296589",
+    "commercial_id": "1064300005",
+    "order_time": "2/6/2025 06:46:00",
+    "total_pay": 36.689998626708987,
+    "situation": null
+  },
+  {
+    "order_id": "202506020648003104",
+    "customer_id": "330112938077673559",
+    "commercial_id": "3045200005",
+    "order_time": "2/6/2025 06:48:00",
+    "total_pay": 8.670000076293946,
+    "situation": null
+  },
+  {
+    "order_id": "202506020711001408",
+    "customer_id": "540678790729529230",
+    "commercial_id": "3074300005",
+    "order_time": "2/6/2025 07:11:00",
+    "total_pay": 7.829999923706055,
+    "situation": null
+  },
+  {
+    "order_id": "202506020826008096",
+    "customer_id": "748550746753597182",
+    "commercial_id": "1619600003",
+    "order_time": "2/6/2025 08:26:00",
+    "total_pay": 84.70999908447266,
+    "situation": null
+  },
+  {
+    "order_id": "202506020924009696",
+    "customer_id": "02222973679618431X",
+    "commercial_id": "3074300005",
+    "order_time": "2/6/2025 09:24:00",
+    "total_pay": 84.66999816894531,
+    "situation": null
+  },
+  {
+    "order_id": "202506020943006112",
+    "customer_id": "378919826661428946",
+    "commercial_id": "3074300005",
+    "order_time": "2/6/2025 09:43:00",
+    "total_pay": 26.59000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506021001002496",
+    "customer_id": "395656772166080124",
+    "commercial_id": "1619600003",
+    "order_time": "2/6/2025 10:01:00",
+    "total_pay": 98.55000305175781,
+    "situation": null
+  },
+  {
+    "order_id": "202506021009001184",
+    "customer_id": "559260761935599645",
+    "commercial_id": "3074300005",
+    "order_time": "2/6/2025 10:09:00",
+    "total_pay": 47.900001525878909,
+    "situation": null
+  },
+  {
+    "order_id": "202506021016003008",
+    "customer_id": "857310660612882479",
+    "commercial_id": "3074300005",
+    "order_time": "2/6/2025 10:16:00",
+    "total_pay": 24.790000915527345,
+    "situation": null
+  },
+  {
+    "order_id": "202506030547003104",
+    "customer_id": "880577507260931213",
+    "commercial_id": "1064300005",
+    "order_time": "3/6/2025 05:47:00",
+    "total_pay": 77.51000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506030548001600",
+    "customer_id": "584520873027706030",
+    "commercial_id": "1064300005",
+    "order_time": "3/6/2025 05:48:00",
+    "total_pay": 96.5,
+    "situation": null
+  },
+  {
+    "order_id": "202506030607009312",
+    "customer_id": "388171264020755420",
+    "commercial_id": "3045200005",
+    "order_time": "3/6/2025 06:07:00",
+    "total_pay": 26.280000686645509,
+    "situation": null
+  },
+  {
+    "order_id": "202506030611001504",
+    "customer_id": "206502947383694921",
+    "commercial_id": "1064300005",
+    "order_time": "3/6/2025 06:11:00",
+    "total_pay": 41.47999954223633,
+    "situation": null
+  },
+  {
+    "order_id": "202506030643001600",
+    "customer_id": "650342157568301938",
+    "commercial_id": "3045200005",
+    "order_time": "3/6/2025 06:43:00",
+    "total_pay": 97.88999938964844,
+    "situation": null
+  },
+  {
+    "order_id": "202506030711002400",
+    "customer_id": "786386709000370707",
+    "commercial_id": "3074300005",
+    "order_time": "3/6/2025 07:11:00",
+    "total_pay": 61.790000915527347,
+    "situation": null
+  },
+  {
+    "order_id": "202506030721003488",
+    "customer_id": "636366756283813531",
+    "commercial_id": "3045200005",
+    "order_time": "3/6/2025 07:21:00",
+    "total_pay": 44.099998474121097,
+    "situation": null
+  },
+  {
+    "order_id": "202506030907001312",
+    "customer_id": "183171953242267977",
+    "commercial_id": "3074300005",
+    "order_time": "3/6/2025 09:07:00",
+    "total_pay": 93.16999816894531,
+    "situation": null
+  },
+  {
+    "order_id": "202506031000004896",
+    "customer_id": "636366756283813531",
+    "commercial_id": "1619600004",
+    "order_time": "3/6/2025 10:00:00",
+    "total_pay": 87.91000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506040613009184",
+    "customer_id": "786386709000370707",
+    "commercial_id": "3045200005",
+    "order_time": "4/6/2025 06:13:00",
+    "total_pay": 62.0,
+    "situation": null
+  },
+  {
+    "order_id": "202506040650007296",
+    "customer_id": "839786117450152424",
+    "commercial_id": "1064300005",
+    "order_time": "4/6/2025 06:50:00",
+    "total_pay": 80.83000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506040653003584",
+    "customer_id": "284087442524478006",
+    "commercial_id": "3074300005",
+    "order_time": "4/6/2025 06:53:00",
+    "total_pay": 10.859999656677246,
+    "situation": null
+  },
+  {
+    "order_id": "202506040656005600",
+    "customer_id": "141761359166482067",
+    "commercial_id": "1064300005",
+    "order_time": "4/6/2025 06:56:00",
+    "total_pay": 28.940000534057618,
+    "situation": null
+  },
+  {
+    "order_id": "202506040703009312",
+    "customer_id": "627582821689522409",
+    "commercial_id": "1064300005",
+    "order_time": "4/6/2025 07:03:00",
+    "total_pay": 33.290000915527347,
+    "situation": null
+  },
+  {
+    "order_id": "202506040759004512",
+    "customer_id": "399711236782309778",
+    "commercial_id": "3074300005",
+    "order_time": "4/6/2025 07:59:00",
+    "total_pay": 70.80999755859375,
+    "situation": null
+  },
+  {
+    "order_id": "202506040820007584",
+    "customer_id": "467186151871857882",
+    "commercial_id": "1619600004",
+    "order_time": "4/6/2025 08:20:00",
+    "total_pay": 10.0,
+    "situation": null
+  },
+  {
+    "order_id": "202506040844001792",
+    "customer_id": "857310660612882479",
+    "commercial_id": "1619600004",
+    "order_time": "4/6/2025 08:44:00",
+    "total_pay": 5.199999809265137,
+    "situation": null
+  },
+  {
+    "order_id": "202506040856004096",
+    "customer_id": "156906145758995295",
+    "commercial_id": "1619600004",
+    "order_time": "4/6/2025 08:56:00",
+    "total_pay": 86.77999877929688,
+    "situation": null
+  },
+  {
+    "order_id": "202506040921004288",
+    "customer_id": "636366756283813531",
+    "commercial_id": "1619600003",
+    "order_time": "4/6/2025 09:21:00",
+    "total_pay": 86.33000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506040944002400",
+    "customer_id": "395656772166080124",
+    "commercial_id": "3074300005",
+    "order_time": "4/6/2025 09:44:00",
+    "total_pay": 48.34000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506041002006496",
+    "customer_id": "206502947383694921",
+    "commercial_id": "3074300005",
+    "order_time": "4/6/2025 10:02:00",
+    "total_pay": 72.12000274658203,
+    "situation": null
+  },
+  {
+    "order_id": "202506050542009888",
+    "customer_id": "122448724432549918",
+    "commercial_id": "1064300005",
+    "order_time": "5/6/2025 05:42:00",
+    "total_pay": 86.18000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506050639009696",
+    "customer_id": "626145779693633442",
+    "commercial_id": "1064300005",
+    "order_time": "5/6/2025 06:39:00",
+    "total_pay": 35.65999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506050650005504",
+    "customer_id": "599255315943969518",
+    "commercial_id": "3074300005",
+    "order_time": "5/6/2025 06:50:00",
+    "total_pay": 78.66000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506050709002208",
+    "customer_id": "033507363545296589",
+    "commercial_id": "1064300005",
+    "order_time": "5/6/2025 07:09:00",
+    "total_pay": 76.91000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506050832004992",
+    "customer_id": "320704986653022752",
+    "commercial_id": "1619600004",
+    "order_time": "5/6/2025 08:32:00",
+    "total_pay": 40.54999923706055,
+    "situation": null
+  },
+  {
+    "order_id": "202506050857007104",
+    "customer_id": "050832963246188732",
+    "commercial_id": "3074300005",
+    "order_time": "5/6/2025 08:57:00",
+    "total_pay": 32.709999084472659,
+    "situation": null
+  },
+  {
+    "order_id": "202506050916002208",
+    "customer_id": "437566191104746484",
+    "commercial_id": "3074300005",
+    "order_time": "5/6/2025 09:16:00",
+    "total_pay": 78.01000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506050936002496",
+    "customer_id": "975197615398680224",
+    "commercial_id": "1619600003",
+    "order_time": "5/6/2025 09:36:00",
+    "total_pay": 80.16000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506050943007488",
+    "customer_id": "802050996218160822",
+    "commercial_id": "3074300005",
+    "order_time": "5/6/2025 09:43:00",
+    "total_pay": 48.099998474121097,
+    "situation": null
+  },
+  {
+    "order_id": "202506060612002208",
+    "customer_id": "284087442524478006",
+    "commercial_id": "3045200005",
+    "order_time": "6/6/2025 06:12:00",
+    "total_pay": 46.7400016784668,
+    "situation": null
+  },
+  {
+    "order_id": "202506060612004992",
+    "customer_id": "083431471171458476",
+    "commercial_id": "1064300005",
+    "order_time": "6/6/2025 06:12:00",
+    "total_pay": 43.459999084472659,
+    "situation": null
+  },
+  {
+    "order_id": "202506060618005984",
+    "customer_id": "552597920135808005",
+    "commercial_id": "1064300005",
+    "order_time": "6/6/2025 06:18:00",
+    "total_pay": 48.18000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506060714006912",
+    "customer_id": "866727146360553625",
+    "commercial_id": "3074300005",
+    "order_time": "6/6/2025 07:14:00",
+    "total_pay": 63.290000915527347,
+    "situation": null
+  },
+  {
+    "order_id": "202506060717007008",
+    "customer_id": "246118485086129312",
+    "commercial_id": "1064300005",
+    "order_time": "6/6/2025 07:17:00",
+    "total_pay": 86.87999725341797,
+    "situation": null
+  },
+  {
+    "order_id": "202506060902008992",
+    "customer_id": "708293228856250284",
+    "commercial_id": "3074300005",
+    "order_time": "6/6/2025 09:02:00",
+    "total_pay": 44.599998474121097,
+    "situation": null
+  },
+  {
+    "order_id": "202506060914001088",
+    "customer_id": "014721339247273851",
+    "commercial_id": "1619600004",
+    "order_time": "6/6/2025 09:14:00",
+    "total_pay": 19.020000457763673,
+    "situation": null
+  },
+  {
+    "order_id": "202506060934009184",
+    "customer_id": "447511230734719021",
+    "commercial_id": "1619600003",
+    "order_time": "6/6/2025 09:34:00",
+    "total_pay": 86.62999725341797,
+    "situation": null
+  },
+  {
+    "order_id": "202506060939007712",
+    "customer_id": "083431471171458476",
+    "commercial_id": "1619600004",
+    "order_time": "6/6/2025 09:39:00",
+    "total_pay": 84.48999786376953,
+    "situation": null
+  },
+  {
+    "order_id": "202506060940008192",
+    "customer_id": "156906145758995295",
+    "commercial_id": "1619600004",
+    "order_time": "6/6/2025 09:40:00",
+    "total_pay": 19.6299991607666,
+    "situation": null
+  },
+  {
+    "order_id": "202506060959006912",
+    "customer_id": "314025150512410781",
+    "commercial_id": "3074300005",
+    "order_time": "6/6/2025 09:59:00",
+    "total_pay": 83.16000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506070549008384",
+    "customer_id": "378919826661428946",
+    "commercial_id": "1064300005",
+    "order_time": "7/6/2025 05:49:00",
+    "total_pay": 35.130001068115237,
+    "situation": null
+  },
+  {
+    "order_id": "202506070603000992",
+    "customer_id": "64934447721341023X",
+    "commercial_id": "1064300005",
+    "order_time": "7/6/2025 06:03:00",
+    "total_pay": 13.489999771118164,
+    "situation": null
+  },
+  {
+    "order_id": "202506070612003808",
+    "customer_id": "64934447721341023X",
+    "commercial_id": "3045200005",
+    "order_time": "7/6/2025 06:12:00",
+    "total_pay": 68.05999755859375,
+    "situation": null
+  },
+  {
+    "order_id": "202506070614006400",
+    "customer_id": "587698991120188245",
+    "commercial_id": "3074300005",
+    "order_time": "7/6/2025 06:14:00",
+    "total_pay": 73.76000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506070830007200",
+    "customer_id": "199631778137173723",
+    "commercial_id": "1619600003",
+    "order_time": "7/6/2025 08:30:00",
+    "total_pay": 42.290000915527347,
+    "situation": null
+  },
+  {
+    "order_id": "202506070854005408",
+    "customer_id": "696560183226387968",
+    "commercial_id": "1619600003",
+    "order_time": "7/6/2025 08:54:00",
+    "total_pay": 96.44999694824219,
+    "situation": null
+  },
+  {
+    "order_id": "202506070910006688",
+    "customer_id": "663688620975874380",
+    "commercial_id": "1619600003",
+    "order_time": "7/6/2025 09:10:00",
+    "total_pay": 10.680000305175782,
+    "situation": null
+  },
+  {
+    "order_id": "202506070944001408",
+    "customer_id": "134262367791250237",
+    "commercial_id": "3074300005",
+    "order_time": "7/6/2025 09:44:00",
+    "total_pay": 82.26000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506070956001184",
+    "customer_id": "71692706713564323X",
+    "commercial_id": "3074300005",
+    "order_time": "7/6/2025 09:56:00",
+    "total_pay": 87.58999633789063,
+    "situation": null
+  },
+  {
+    "order_id": "202506071000004000",
+    "customer_id": "183171953242267977",
+    "commercial_id": "1619600003",
+    "order_time": "7/6/2025 10:00:00",
+    "total_pay": 92.33000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506080537003392",
+    "customer_id": "786386709000370707",
+    "commercial_id": "1064300005",
+    "order_time": "8/6/2025 05:37:00",
+    "total_pay": 41.560001373291019,
+    "situation": null
+  },
+  {
+    "order_id": "202506080643006592",
+    "customer_id": "314025150512410781",
+    "commercial_id": "3074300005",
+    "order_time": "8/6/2025 06:43:00",
+    "total_pay": 91.37000274658203,
+    "situation": null
+  },
+  {
+    "order_id": "202506080723004288",
+    "customer_id": "330498895805694702",
+    "commercial_id": "3074300005",
+    "order_time": "8/6/2025 07:23:00",
+    "total_pay": 84.73999786376953,
+    "situation": null
+  },
+  {
+    "order_id": "202506080758002496",
+    "customer_id": "199631778137173723",
+    "commercial_id": "3074300005",
+    "order_time": "8/6/2025 07:58:00",
+    "total_pay": 13.640000343322754,
+    "situation": null
+  },
+  {
+    "order_id": "202506080905004096",
+    "customer_id": "631195560557032874",
+    "commercial_id": "1619600003",
+    "order_time": "8/6/2025 09:05:00",
+    "total_pay": 51.52000045776367,
+    "situation": null
+  },
+  {
+    "order_id": "202506090547007008",
+    "customer_id": "207493731154851026",
+    "commercial_id": "3045200005",
+    "order_time": "9/6/2025 05:47:00",
+    "total_pay": 47.58000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506090841006400",
+    "customer_id": "447511230734719021",
+    "commercial_id": "3074300005",
+    "order_time": "9/6/2025 08:41:00",
+    "total_pay": 57.7400016784668,
+    "situation": null
+  },
+  {
+    "order_id": "202506090851008288",
+    "customer_id": "326124039315895676",
+    "commercial_id": "3074300005",
+    "order_time": "9/6/2025 08:51:00",
+    "total_pay": 97.88999938964844,
+    "situation": null
+  },
+  {
+    "order_id": "202506090857004992",
+    "customer_id": "183171953242267977",
+    "commercial_id": "3074300005",
+    "order_time": "9/6/2025 08:57:00",
+    "total_pay": 16.65999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506090900004384",
+    "customer_id": "785000522027848662",
+    "commercial_id": "1619600004",
+    "order_time": "9/6/2025 09:00:00",
+    "total_pay": 34.09000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506090935008288",
+    "customer_id": "660555132284217527",
+    "commercial_id": "1619600004",
+    "order_time": "9/6/2025 09:35:00",
+    "total_pay": 90.38999938964844,
+    "situation": null
+  },
+  {
+    "order_id": "202506090953006208",
+    "customer_id": "346191649043809851",
+    "commercial_id": "3074300005",
+    "order_time": "9/6/2025 09:53:00",
+    "total_pay": 22.059999465942384,
+    "situation": null
+  },
+  {
+    "order_id": "202506091011002496",
+    "customer_id": "234395972077878598",
+    "commercial_id": "3074300005",
+    "order_time": "9/6/2025 10:11:00",
+    "total_pay": 17.299999237060548,
+    "situation": null
+  },
+  {
+    "order_id": "202506100633002592",
+    "customer_id": "127075087231066779",
+    "commercial_id": "3074300005",
+    "order_time": "10/6/2025 06:33:00",
+    "total_pay": 23.90999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506100655001888",
+    "customer_id": "134262367791250237",
+    "commercial_id": "3045200005",
+    "order_time": "10/6/2025 06:55:00",
+    "total_pay": 27.450000762939454,
+    "situation": null
+  },
+  {
+    "order_id": "202506100725001184",
+    "customer_id": "234395972077878598",
+    "commercial_id": "3074300005",
+    "order_time": "10/6/2025 07:25:00",
+    "total_pay": 76.66999816894531,
+    "situation": null
+  },
+  {
+    "order_id": "202506100818008800",
+    "customer_id": "467186151871857882",
+    "commercial_id": "1619600003",
+    "order_time": "10/6/2025 08:18:00",
+    "total_pay": 42.25,
+    "situation": null
+  },
+  {
+    "order_id": "202506100822009408",
+    "customer_id": "47242105047660209X",
+    "commercial_id": "1619600003",
+    "order_time": "10/6/2025 08:22:00",
+    "total_pay": 49.4900016784668,
+    "situation": null
+  },
+  {
+    "order_id": "202506100825004000",
+    "customer_id": "724264406938603204",
+    "commercial_id": "1619600003",
+    "order_time": "10/6/2025 08:25:00",
+    "total_pay": 90.80000305175781,
+    "situation": null
+  },
+  {
+    "order_id": "202506100917001984",
+    "customer_id": "152648796817294732",
+    "commercial_id": "1619600003",
+    "order_time": "10/6/2025 09:17:00",
+    "total_pay": 73.86000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506100929005312",
+    "customer_id": "663688620975874380",
+    "commercial_id": "3074300005",
+    "order_time": "10/6/2025 09:29:00",
+    "total_pay": 52.529998779296878,
+    "situation": null
+  },
+  {
+    "order_id": "202506100943003104",
+    "customer_id": "388171264020755420",
+    "commercial_id": "1619600003",
+    "order_time": "10/6/2025 09:43:00",
+    "total_pay": 15.5,
+    "situation": null
+  },
+  {
+    "order_id": "202506100951005984",
+    "customer_id": "61273002036811332X",
+    "commercial_id": "1619600004",
+    "order_time": "10/6/2025 09:51:00",
+    "total_pay": 6.309999942779541,
+    "situation": null
+  },
+  {
+    "order_id": "202506110545009312",
+    "customer_id": "47242105047660209X",
+    "commercial_id": "3045200005",
+    "order_time": "11/6/2025 05:45:00",
+    "total_pay": 23.06999969482422,
+    "situation": null
+  },
+  {
+    "order_id": "202506110638002304",
+    "customer_id": "320704986653022752",
+    "commercial_id": "1064300005",
+    "order_time": "11/6/2025 06:38:00",
+    "total_pay": 72.81999969482422,
+    "situation": null
+  },
+  {
+    "order_id": "202506110650007200",
+    "customer_id": "421116318830822341",
+    "commercial_id": "3045200005",
+    "order_time": "11/6/2025 06:50:00",
+    "total_pay": 81.80999755859375,
+    "situation": null
+  },
+  {
+    "order_id": "202506110707004896",
+    "customer_id": "696560183226387968",
+    "commercial_id": "3074300005",
+    "order_time": "11/6/2025 07:07:00",
+    "total_pay": 69.52999877929688,
+    "situation": null
+  },
+  {
+    "order_id": "202506110918004096",
+    "customer_id": "725964619938489331",
+    "commercial_id": "3074300005",
+    "order_time": "11/6/2025 09:18:00",
+    "total_pay": 52.0099983215332,
+    "situation": null
+  },
+  {
+    "order_id": "202506110942004192",
+    "customer_id": "461976534037892612",
+    "commercial_id": "3074300005",
+    "order_time": "11/6/2025 09:42:00",
+    "total_pay": 69.58999633789063,
+    "situation": null
+  },
+  {
+    "order_id": "202506120702009088",
+    "customer_id": "207493731154851026",
+    "commercial_id": "3045200005",
+    "order_time": "12/6/2025 07:02:00",
+    "total_pay": 50.880001068115237,
+    "situation": null
+  },
+  {
+    "order_id": "202506120718007200",
+    "customer_id": "975197615398680224",
+    "commercial_id": "1064300005",
+    "order_time": "12/6/2025 07:18:00",
+    "total_pay": 11.949999809265137,
+    "situation": null
+  },
+  {
+    "order_id": "202506120826008704",
+    "customer_id": "724264406938603204",
+    "commercial_id": "1619600003",
+    "order_time": "12/6/2025 08:26:00",
+    "total_pay": 20.200000762939454,
+    "situation": null
+  },
+  {
+    "order_id": "202506120836009696",
+    "customer_id": "271349855976525685",
+    "commercial_id": "3074300005",
+    "order_time": "12/6/2025 08:36:00",
+    "total_pay": 91.29000091552735,
+    "situation": null
+  },
+  {
+    "order_id": "202506120851002688",
+    "customer_id": "346191649043809851",
+    "commercial_id": "1619600004",
+    "order_time": "12/6/2025 08:51:00",
+    "total_pay": 48.029998779296878,
+    "situation": null
+  },
+  {
+    "order_id": "202506120916009792",
+    "customer_id": "284087442524478006",
+    "commercial_id": "1619600004",
+    "order_time": "12/6/2025 09:16:00",
+    "total_pay": 94.66000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506120935006592",
+    "customer_id": "785000522027848662",
+    "commercial_id": "3074300005",
+    "order_time": "12/6/2025 09:35:00",
+    "total_pay": 54.97999954223633,
+    "situation": null
+  },
+  {
+    "order_id": "202506120943008512",
+    "customer_id": "629973043393174248",
+    "commercial_id": "3074300005",
+    "order_time": "12/6/2025 09:43:00",
+    "total_pay": 56.45000076293945,
+    "situation": null
+  },
+  {
+    "order_id": "202506130540001600",
+    "customer_id": "892240117190152257",
+    "commercial_id": "1064300005",
+    "order_time": "13/6/2025 05:40:00",
+    "total_pay": 78.16000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506130632001184",
+    "customer_id": "141761359166482067",
+    "commercial_id": "3074300005",
+    "order_time": "13/6/2025 06:32:00",
+    "total_pay": 8.15999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506130638004800",
+    "customer_id": "831622280003796573",
+    "commercial_id": "3045200005",
+    "order_time": "13/6/2025 06:38:00",
+    "total_pay": 96.94999694824219,
+    "situation": null
+  },
+  {
+    "order_id": "202506130914008192",
+    "customer_id": "034179215228784315",
+    "commercial_id": "1619600004",
+    "order_time": "13/6/2025 09:14:00",
+    "total_pay": 63.220001220703128,
+    "situation": null
+  },
+  {
+    "order_id": "202506130915004800",
+    "customer_id": "839786117450152424",
+    "commercial_id": "3074300005",
+    "order_time": "13/6/2025 09:15:00",
+    "total_pay": 14.770000457763672,
+    "situation": null
+  },
+  {
+    "order_id": "202506140632009504",
+    "customer_id": "388171264020755420",
+    "commercial_id": "1064300005",
+    "order_time": "14/6/2025 06:32:00",
+    "total_pay": 66.20999908447266,
+    "situation": null
+  },
+  {
+    "order_id": "202506140646007104",
+    "customer_id": "314025150512410781",
+    "commercial_id": "3074300005",
+    "order_time": "14/6/2025 06:46:00",
+    "total_pay": 59.7599983215332,
+    "situation": null
+  },
+  {
+    "order_id": "202506140934006400",
+    "customer_id": "64934447721341023X",
+    "commercial_id": "1619600003",
+    "order_time": "14/6/2025 09:34:00",
+    "total_pay": 65.68000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506140941006112",
+    "customer_id": "866727146360553625",
+    "commercial_id": "3074300005",
+    "order_time": "14/6/2025 09:41:00",
+    "total_pay": 76.04000091552735,
+    "situation": null
+  },
+  {
+    "order_id": "202506141007009696",
+    "customer_id": "587698991120188245",
+    "commercial_id": "3074300005",
+    "order_time": "14/6/2025 10:07:00",
+    "total_pay": 68.48999786376953,
+    "situation": null
+  },
+  {
+    "order_id": "202506150651008704",
+    "customer_id": "945068161852109815",
+    "commercial_id": "3045200005",
+    "order_time": "15/6/2025 06:51:00",
+    "total_pay": 53.88999938964844,
+    "situation": null
+  },
+  {
+    "order_id": "202506150654003712",
+    "customer_id": "599255315943969518",
+    "commercial_id": "1064300005",
+    "order_time": "15/6/2025 06:54:00",
+    "total_pay": 8.890000343322754,
+    "situation": null
+  },
+  {
+    "order_id": "202506150655007904",
+    "customer_id": "831622280003796573",
+    "commercial_id": "1064300005",
+    "order_time": "15/6/2025 06:55:00",
+    "total_pay": 60.58000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506150753003488",
+    "customer_id": "659734491980689907",
+    "commercial_id": "3074300005",
+    "order_time": "15/6/2025 07:53:00",
+    "total_pay": 76.5199966430664,
+    "situation": null
+  },
+  {
+    "order_id": "202506150918001888",
+    "customer_id": "785000522027848662",
+    "commercial_id": "3074300005",
+    "order_time": "15/6/2025 09:18:00",
+    "total_pay": 53.619998931884769,
+    "situation": null
+  },
+  {
+    "order_id": "202506150926001888",
+    "customer_id": "282114641960146005",
+    "commercial_id": "3074300005",
+    "order_time": "15/6/2025 09:26:00",
+    "total_pay": 44.970001220703128,
+    "situation": null
+  },
+  {
+    "order_id": "202506150940002912",
+    "customer_id": "999905120040215909",
+    "commercial_id": "1619600003",
+    "order_time": "15/6/2025 09:40:00",
+    "total_pay": 16.190000534057618,
+    "situation": null
+  },
+  {
+    "order_id": "202506160606002208",
+    "customer_id": "540678790729529230",
+    "commercial_id": "1064300005",
+    "order_time": "16/6/2025 06:06:00",
+    "total_pay": 87.81999969482422,
+    "situation": null
+  },
+  {
+    "order_id": "202506160621009312",
+    "customer_id": "387761377561482605",
+    "commercial_id": "3074300005",
+    "order_time": "16/6/2025 06:21:00",
+    "total_pay": 6.869999885559082,
+    "situation": null
+  },
+  {
+    "order_id": "202506160704003296",
+    "customer_id": "02222973679618431X",
+    "commercial_id": "3074300005",
+    "order_time": "16/6/2025 07:04:00",
+    "total_pay": 44.06999969482422,
+    "situation": null
+  },
+  {
+    "order_id": "202506160848002208",
+    "customer_id": "587698991120188245",
+    "commercial_id": "1619600004",
+    "order_time": "16/6/2025 08:48:00",
+    "total_pay": 12.25,
+    "situation": null
+  },
+  {
+    "order_id": "202506160920001984",
+    "customer_id": "388171264020755420",
+    "commercial_id": "3074300005",
+    "order_time": "16/6/2025 09:20:00",
+    "total_pay": 77.3499984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506160920008384",
+    "customer_id": "839786117450152424",
+    "commercial_id": "1619600004",
+    "order_time": "16/6/2025 09:20:00",
+    "total_pay": 68.72000122070313,
+    "situation": null
+  },
+  {
+    "order_id": "202506160926008992",
+    "customer_id": "246118485086129312",
+    "commercial_id": "3074300005",
+    "order_time": "16/6/2025 09:26:00",
+    "total_pay": 61.099998474121097,
+    "situation": null
+  },
+  {
+    "order_id": "202506160927001312",
+    "customer_id": "083431471171458476",
+    "commercial_id": "1619600003",
+    "order_time": "16/6/2025 09:27:00",
+    "total_pay": 78.11000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506160927007904",
+    "customer_id": "282114641960146005",
+    "commercial_id": "1619600004",
+    "order_time": "16/6/2025 09:27:00",
+    "total_pay": 11.8100004196167,
+    "situation": null
+  },
+  {
+    "order_id": "202506160937004096",
+    "customer_id": "663688620975874380",
+    "commercial_id": "1619600003",
+    "order_time": "16/6/2025 09:37:00",
+    "total_pay": 40.939998626708987,
+    "situation": null
+  },
+  {
+    "order_id": "202506160946005408",
+    "customer_id": "748550746753597182",
+    "commercial_id": "3074300005",
+    "order_time": "16/6/2025 09:46:00",
+    "total_pay": 6.690000057220459,
+    "situation": null
+  },
+  {
+    "order_id": "202506161002007808",
+    "customer_id": "183171953242267977",
+    "commercial_id": "1619600004",
+    "order_time": "16/6/2025 10:02:00",
+    "total_pay": 65.05999755859375,
+    "situation": null
+  },
+  {
+    "order_id": "202506170546007200",
+    "customer_id": "013486984998774246",
+    "commercial_id": "1064300005",
+    "order_time": "17/6/2025 05:46:00",
+    "total_pay": 97.91000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506170613008608",
+    "customer_id": "330112938077673559",
+    "commercial_id": "3074300005",
+    "order_time": "17/6/2025 06:13:00",
+    "total_pay": 15.119999885559082,
+    "situation": null
+  },
+  {
+    "order_id": "202506170629008512",
+    "customer_id": "183171953242267977",
+    "commercial_id": "3045200005",
+    "order_time": "17/6/2025 06:29:00",
+    "total_pay": 98.0999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506170630007584",
+    "customer_id": "346191649043809851",
+    "commercial_id": "1064300005",
+    "order_time": "17/6/2025 06:30:00",
+    "total_pay": 44.47999954223633,
+    "situation": null
+  },
+  {
+    "order_id": "202506170857005888",
+    "customer_id": "282114641960146005",
+    "commercial_id": "1619600004",
+    "order_time": "17/6/2025 08:57:00",
+    "total_pay": 30.25,
+    "situation": null
+  },
+  {
+    "order_id": "202506170910003296",
+    "customer_id": "892240117190152257",
+    "commercial_id": "3074300005",
+    "order_time": "17/6/2025 09:10:00",
+    "total_pay": 91.44000244140625,
+    "situation": null
+  },
+  {
+    "order_id": "202506170945004096",
+    "customer_id": "552597920135808005",
+    "commercial_id": "3074300005",
+    "order_time": "17/6/2025 09:45:00",
+    "total_pay": 24.239999771118165,
+    "situation": null
+  },
+  {
+    "order_id": "202506180629004608",
+    "customer_id": "631195560557032874",
+    "commercial_id": "3074300005",
+    "order_time": "18/6/2025 06:29:00",
+    "total_pay": 53.400001525878909,
+    "situation": null
+  },
+  {
+    "order_id": "202506180658006592",
+    "customer_id": "156906145758995295",
+    "commercial_id": "3045200005",
+    "order_time": "18/6/2025 06:58:00",
+    "total_pay": 32.52000045776367,
+    "situation": null
+  },
+  {
+    "order_id": "202506180706008992",
+    "customer_id": "437566191104746484",
+    "commercial_id": "3045200005",
+    "order_time": "18/6/2025 07:06:00",
+    "total_pay": 46.470001220703128,
+    "situation": null
+  },
+  {
+    "order_id": "202506180709001600",
+    "customer_id": "636366756283813531",
+    "commercial_id": "3045200005",
+    "order_time": "18/6/2025 07:09:00",
+    "total_pay": 54.61000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506180845005408",
+    "customer_id": "282114641960146005",
+    "commercial_id": "1619600003",
+    "order_time": "18/6/2025 08:45:00",
+    "total_pay": 26.15999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506180859006112",
+    "customer_id": "708293228856250284",
+    "commercial_id": "1619600003",
+    "order_time": "18/6/2025 08:59:00",
+    "total_pay": 66.79000091552735,
+    "situation": null
+  },
+  {
+    "order_id": "202506180945001184",
+    "customer_id": "985650580774614308",
+    "commercial_id": "3074300005",
+    "order_time": "18/6/2025 09:45:00",
+    "total_pay": 53.689998626708987,
+    "situation": null
+  },
+  {
+    "order_id": "202506190557008992",
+    "customer_id": "945068161852109815",
+    "commercial_id": "3045200005",
+    "order_time": "19/6/2025 05:57:00",
+    "total_pay": 9.229999542236329,
+    "situation": null
+  },
+  {
+    "order_id": "202506190600002112",
+    "customer_id": "71692706713564323X",
+    "commercial_id": "3045200005",
+    "order_time": "19/6/2025 06:00:00",
+    "total_pay": 39.599998474121097,
+    "situation": null
+  },
+  {
+    "order_id": "202506190609004288",
+    "customer_id": "631195560557032874",
+    "commercial_id": "3045200005",
+    "order_time": "19/6/2025 06:09:00",
+    "total_pay": 6.380000114440918,
+    "situation": null
+  },
+  {
+    "order_id": "202506190621005696",
+    "customer_id": "421116318830822341",
+    "commercial_id": "1064300005",
+    "order_time": "19/6/2025 06:21:00",
+    "total_pay": 26.190000534057618,
+    "situation": null
+  },
+  {
+    "order_id": "202506190645006688",
+    "customer_id": "152648796817294732",
+    "commercial_id": "1064300005",
+    "order_time": "19/6/2025 06:45:00",
+    "total_pay": 8.3100004196167,
+    "situation": null
+  },
+  {
+    "order_id": "202506190648009312",
+    "customer_id": "748598488733199040",
+    "commercial_id": "1064300005",
+    "order_time": "19/6/2025 06:48:00",
+    "total_pay": 75.0999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506190651001184",
+    "customer_id": "326890810196171381",
+    "commercial_id": "3045200005",
+    "order_time": "19/6/2025 06:51:00",
+    "total_pay": 31.780000686645509,
+    "situation": null
+  },
+  {
+    "order_id": "202506190723002784",
+    "customer_id": "584520873027706030",
+    "commercial_id": "3045200005",
+    "order_time": "19/6/2025 07:23:00",
+    "total_pay": 26.6200008392334,
+    "situation": null
+  },
+  {
+    "order_id": "202506190830006208",
+    "customer_id": "330112938077673559",
+    "commercial_id": "3074300005",
+    "order_time": "19/6/2025 08:30:00",
+    "total_pay": 88.02999877929688,
+    "situation": null
+  },
+  {
+    "order_id": "202506190838008704",
+    "customer_id": "636366756283813531",
+    "commercial_id": "1619600003",
+    "order_time": "19/6/2025 08:38:00",
+    "total_pay": 76.66000366210938,
+    "situation": null
+  },
+  {
+    "order_id": "202506190846006688",
+    "customer_id": "034179215228784315",
+    "commercial_id": "1619600003",
+    "order_time": "19/6/2025 08:46:00",
+    "total_pay": 57.58000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506190908004384",
+    "customer_id": "330498895805694702",
+    "commercial_id": "1619600004",
+    "order_time": "19/6/2025 09:08:00",
+    "total_pay": 88.8499984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506190923008608",
+    "customer_id": "837023779472343659",
+    "commercial_id": "1619600003",
+    "order_time": "19/6/2025 09:23:00",
+    "total_pay": 54.689998626708987,
+    "situation": null
+  },
+  {
+    "order_id": "202506190953005184",
+    "customer_id": "552597920135808005",
+    "commercial_id": "1619600003",
+    "order_time": "19/6/2025 09:53:00",
+    "total_pay": 47.77000045776367,
+    "situation": null
+  },
+  {
+    "order_id": "202506200645003392",
+    "customer_id": "839786117450152424",
+    "commercial_id": "3045200005",
+    "order_time": "20/6/2025 06:45:00",
+    "total_pay": 15.430000305175782,
+    "situation": null
+  },
+  {
+    "order_id": "202506200703007200",
+    "customer_id": "945068161852109815",
+    "commercial_id": "1064300005",
+    "order_time": "20/6/2025 07:03:00",
+    "total_pay": 29.530000686645509,
+    "situation": null
+  },
+  {
+    "order_id": "202506200743005504",
+    "customer_id": "246118485086129312",
+    "commercial_id": "3074300005",
+    "order_time": "20/6/2025 07:43:00",
+    "total_pay": 98.54000091552735,
+    "situation": null
+  },
+  {
+    "order_id": "202506200846004096",
+    "customer_id": "02222973679618431X",
+    "commercial_id": "1619600004",
+    "order_time": "20/6/2025 08:46:00",
+    "total_pay": 82.05000305175781,
+    "situation": null
+  },
+  {
+    "order_id": "202506200849006496",
+    "customer_id": "199631778137173723",
+    "commercial_id": "1619600003",
+    "order_time": "20/6/2025 08:49:00",
+    "total_pay": 95.62999725341797,
+    "situation": null
+  },
+  {
+    "order_id": "202506200857005600",
+    "customer_id": "999905120040215909",
+    "commercial_id": "1619600004",
+    "order_time": "20/6/2025 08:57:00",
+    "total_pay": 48.93000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506200905002304",
+    "customer_id": "320704986653022752",
+    "commercial_id": "1619600003",
+    "order_time": "20/6/2025 09:05:00",
+    "total_pay": 26.5,
+    "situation": null
+  },
+  {
+    "order_id": "202506200923005184",
+    "customer_id": "626145779693633442",
+    "commercial_id": "1619600003",
+    "order_time": "20/6/2025 09:23:00",
+    "total_pay": 45.790000915527347,
+    "situation": null
+  },
+  {
+    "order_id": "202506200934001312",
+    "customer_id": "437566191104746484",
+    "commercial_id": "3074300005",
+    "order_time": "20/6/2025 09:34:00",
+    "total_pay": 42.38999938964844,
+    "situation": null
+  },
+  {
+    "order_id": "202506201002008288",
+    "customer_id": "626145779693633442",
+    "commercial_id": "3074300005",
+    "order_time": "20/6/2025 10:02:00",
+    "total_pay": 62.65999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506210556009088",
+    "customer_id": "837023779472343659",
+    "commercial_id": "1064300005",
+    "order_time": "21/6/2025 05:56:00",
+    "total_pay": 25.1200008392334,
+    "situation": null
+  },
+  {
+    "order_id": "202506210710004192",
+    "customer_id": "083431471171458476",
+    "commercial_id": "3074300005",
+    "order_time": "21/6/2025 07:10:00",
+    "total_pay": 12.710000038146973,
+    "situation": null
+  },
+  {
+    "order_id": "202506210743004384",
+    "customer_id": "271349855976525685",
+    "commercial_id": "3074300005",
+    "order_time": "21/6/2025 07:43:00",
+    "total_pay": 92.19999694824219,
+    "situation": null
+  },
+  {
+    "order_id": "202506210747001408",
+    "customer_id": "587698991120188245",
+    "commercial_id": "3074300005",
+    "order_time": "21/6/2025 07:47:00",
+    "total_pay": 97.88999938964844,
+    "situation": null
+  },
+  {
+    "order_id": "202506210754003008",
+    "customer_id": "999905120040215909",
+    "commercial_id": "3074300005",
+    "order_time": "21/6/2025 07:54:00",
+    "total_pay": 91.77999877929688,
+    "situation": null
+  },
+  {
+    "order_id": "202506210829001696",
+    "customer_id": "014721339247273851",
+    "commercial_id": "3074300005",
+    "order_time": "21/6/2025 08:29:00",
+    "total_pay": 16.399999618530275,
+    "situation": null
+  },
+  {
+    "order_id": "202506210846001792",
+    "customer_id": "587698991120188245",
+    "commercial_id": "3074300005",
+    "order_time": "21/6/2025 08:46:00",
+    "total_pay": 60.869998931884769,
+    "situation": null
+  },
+  {
+    "order_id": "202506210849007392",
+    "customer_id": "924237584770751413",
+    "commercial_id": "1619600004",
+    "order_time": "21/6/2025 08:49:00",
+    "total_pay": 88.43000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506210900003712",
+    "customer_id": "627582821689522409",
+    "commercial_id": "1619600004",
+    "order_time": "21/6/2025 09:00:00",
+    "total_pay": 59.650001525878909,
+    "situation": null
+  },
+  {
+    "order_id": "202506210902009408",
+    "customer_id": "387761377561482605",
+    "commercial_id": "1619600004",
+    "order_time": "21/6/2025 09:02:00",
+    "total_pay": 82.72000122070313,
+    "situation": null
+  },
+  {
+    "order_id": "202506210934005312",
+    "customer_id": "945068161852109815",
+    "commercial_id": "3074300005",
+    "order_time": "21/6/2025 09:34:00",
+    "total_pay": 49.380001068115237,
+    "situation": null
+  },
+  {
+    "order_id": "202506220552005184",
+    "customer_id": "326890810196171381",
+    "commercial_id": "3045200005",
+    "order_time": "22/6/2025 05:52:00",
+    "total_pay": 29.190000534057618,
+    "situation": null
+  },
+  {
+    "order_id": "202506220622006912",
+    "customer_id": "587698991120188245",
+    "commercial_id": "1064300005",
+    "order_time": "22/6/2025 06:22:00",
+    "total_pay": 25.0,
+    "situation": null
+  },
+  {
+    "order_id": "202506220629001600",
+    "customer_id": "183171953242267977",
+    "commercial_id": "3074300005",
+    "order_time": "22/6/2025 06:29:00",
+    "total_pay": 58.310001373291019,
+    "situation": null
+  },
+  {
+    "order_id": "202506220638009408",
+    "customer_id": "395656772166080124",
+    "commercial_id": "3074300005",
+    "order_time": "22/6/2025 06:38:00",
+    "total_pay": 10.069999694824219,
+    "situation": null
+  },
+  {
+    "order_id": "202506220652008096",
+    "customer_id": "540678790729529230",
+    "commercial_id": "3045200005",
+    "order_time": "22/6/2025 06:52:00",
+    "total_pay": 68.55999755859375,
+    "situation": null
+  },
+  {
+    "order_id": "202506220659009312",
+    "customer_id": "246118485086129312",
+    "commercial_id": "3045200005",
+    "order_time": "22/6/2025 06:59:00",
+    "total_pay": 16.149999618530275,
+    "situation": null
+  },
+  {
+    "order_id": "202506220710000992",
+    "customer_id": "748550746753597182",
+    "commercial_id": "3045200005",
+    "order_time": "22/6/2025 07:10:00",
+    "total_pay": 20.31999969482422,
+    "situation": null
+  },
+  {
+    "order_id": "202506220711004384",
+    "customer_id": "748550746753597182",
+    "commercial_id": "1064300005",
+    "order_time": "22/6/2025 07:11:00",
+    "total_pay": 96.47000122070313,
+    "situation": null
+  },
+  {
+    "order_id": "202506220731009312",
+    "customer_id": "450313113017107801",
+    "commercial_id": "3045200005",
+    "order_time": "22/6/2025 07:31:00",
+    "total_pay": 10.930000305175782,
+    "situation": null
+  },
+  {
+    "order_id": "202506220757004096",
+    "customer_id": "771370634992090335",
+    "commercial_id": "3074300005",
+    "order_time": "22/6/2025 07:57:00",
+    "total_pay": 22.360000610351564,
+    "situation": null
+  },
+  {
+    "order_id": "202506220844006784",
+    "customer_id": "326890810196171381",
+    "commercial_id": "3074300005",
+    "order_time": "22/6/2025 08:44:00",
+    "total_pay": 41.16999816894531,
+    "situation": null
+  },
+  {
+    "order_id": "202506220912004288",
+    "customer_id": "559260761935599645",
+    "commercial_id": "3074300005",
+    "order_time": "22/6/2025 09:12:00",
+    "total_pay": 59.630001068115237,
+    "situation": null
+  },
+  {
+    "order_id": "202506220951009792",
+    "customer_id": "421116318830822341",
+    "commercial_id": "1619600003",
+    "order_time": "22/6/2025 09:51:00",
+    "total_pay": 9.770000457763672,
+    "situation": null
+  },
+  {
+    "order_id": "202506230621007392",
+    "customer_id": "103638938299399744",
+    "commercial_id": "1064300005",
+    "order_time": "23/6/2025 06:21:00",
+    "total_pay": 41.45000076293945,
+    "situation": null
+  },
+  {
+    "order_id": "202506230636008704",
+    "customer_id": "207763566412100279",
+    "commercial_id": "3074300005",
+    "order_time": "23/6/2025 06:36:00",
+    "total_pay": 10.25,
+    "situation": null
+  },
+  {
+    "order_id": "202506230710003488",
+    "customer_id": "447511230734719021",
+    "commercial_id": "3045200005",
+    "order_time": "23/6/2025 07:10:00",
+    "total_pay": 67.58000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506230856009696",
+    "customer_id": "857310660612882479",
+    "commercial_id": "1619600003",
+    "order_time": "23/6/2025 08:56:00",
+    "total_pay": 52.68000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506230912005312",
+    "customer_id": "559260761935599645",
+    "commercial_id": "1619600003",
+    "order_time": "23/6/2025 09:12:00",
+    "total_pay": 56.11000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506230920005408",
+    "customer_id": "599255315943969518",
+    "commercial_id": "1619600004",
+    "order_time": "23/6/2025 09:20:00",
+    "total_pay": 18.729999542236329,
+    "situation": null
+  },
+  {
+    "order_id": "202506230935009696",
+    "customer_id": "636366756283813531",
+    "commercial_id": "3074300005",
+    "order_time": "23/6/2025 09:35:00",
+    "total_pay": 19.670000076293947,
+    "situation": null
+  },
+  {
+    "order_id": "202506230950009600",
+    "customer_id": "786386709000370707",
+    "commercial_id": "1619600004",
+    "order_time": "23/6/2025 09:50:00",
+    "total_pay": 31.440000534057618,
+    "situation": null
+  },
+  {
+    "order_id": "202506230955005504",
+    "customer_id": "450313113017107801",
+    "commercial_id": "3074300005",
+    "order_time": "23/6/2025 09:55:00",
+    "total_pay": 13.770000457763672,
+    "situation": null
+  },
+  {
+    "order_id": "202506240555009984",
+    "customer_id": "636366756283813531",
+    "commercial_id": "3045200005",
+    "order_time": "24/6/2025 05:55:00",
+    "total_pay": 56.099998474121097,
+    "situation": null
+  },
+  {
+    "order_id": "202506240750008192",
+    "customer_id": "985650580774614308",
+    "commercial_id": "3074300005",
+    "order_time": "24/6/2025 07:50:00",
+    "total_pay": 58.66999816894531,
+    "situation": null
+  },
+  {
+    "order_id": "202506240820002592",
+    "customer_id": "375663768064070433",
+    "commercial_id": "1619600004",
+    "order_time": "24/6/2025 08:20:00",
+    "total_pay": 25.639999389648439,
+    "situation": null
+  },
+  {
+    "order_id": "202506240830004512",
+    "customer_id": "44502723327822613X",
+    "commercial_id": "1619600003",
+    "order_time": "24/6/2025 08:30:00",
+    "total_pay": 69.36000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506240834005984",
+    "customer_id": "831622280003796573",
+    "commercial_id": "1619600003",
+    "order_time": "24/6/2025 08:34:00",
+    "total_pay": 40.630001068115237,
+    "situation": null
+  },
+  {
+    "order_id": "202506240835004704",
+    "customer_id": "663688620975874380",
+    "commercial_id": "3074300005",
+    "order_time": "24/6/2025 08:35:00",
+    "total_pay": 29.299999237060548,
+    "situation": null
+  },
+  {
+    "order_id": "202506240859007104",
+    "customer_id": "61273002036811332X",
+    "commercial_id": "3074300005",
+    "order_time": "24/6/2025 08:59:00",
+    "total_pay": 97.51000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506240925003488",
+    "customer_id": "033507363545296589",
+    "commercial_id": "1619600003",
+    "order_time": "24/6/2025 09:25:00",
+    "total_pay": 48.66999816894531,
+    "situation": null
+  },
+  {
+    "order_id": "202506240930007584",
+    "customer_id": "134262367791250237",
+    "commercial_id": "3074300005",
+    "order_time": "24/6/2025 09:30:00",
+    "total_pay": 9.470000267028809,
+    "situation": null
+  },
+  {
+    "order_id": "202506240937004704",
+    "customer_id": "945068161852109815",
+    "commercial_id": "1619600004",
+    "order_time": "24/6/2025 09:37:00",
+    "total_pay": 75.4000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506240945003200",
+    "customer_id": "587698991120188245",
+    "commercial_id": "1619600003",
+    "order_time": "24/6/2025 09:45:00",
+    "total_pay": 88.76000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506240958009696",
+    "customer_id": "034179215228784315",
+    "commercial_id": "1619600003",
+    "order_time": "24/6/2025 09:58:00",
+    "total_pay": 11.489999771118164,
+    "situation": null
+  },
+  {
+    "order_id": "202506250833007200",
+    "customer_id": "326890810196171381",
+    "commercial_id": "1619600004",
+    "order_time": "25/6/2025 08:33:00",
+    "total_pay": 85.0999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506250911009184",
+    "customer_id": "870173948777186396",
+    "commercial_id": "1619600003",
+    "order_time": "25/6/2025 09:11:00",
+    "total_pay": 34.2599983215332,
+    "situation": null
+  },
+  {
+    "order_id": "202506250934009408",
+    "customer_id": "243403299634379567",
+    "commercial_id": "1619600003",
+    "order_time": "25/6/2025 09:34:00",
+    "total_pay": 16.239999771118165,
+    "situation": null
+  },
+  {
+    "order_id": "202506250939004896",
+    "customer_id": "282114641960146005",
+    "commercial_id": "1619600003",
+    "order_time": "25/6/2025 09:39:00",
+    "total_pay": 18.1200008392334,
+    "situation": null
+  },
+  {
+    "order_id": "202506250945007392",
+    "customer_id": "399711236782309778",
+    "commercial_id": "1619600003",
+    "order_time": "25/6/2025 09:45:00",
+    "total_pay": 5.360000133514404,
+    "situation": null
+  },
+  {
+    "order_id": "202506250951003584",
+    "customer_id": "771370634992090335",
+    "commercial_id": "1619600003",
+    "order_time": "25/6/2025 09:51:00",
+    "total_pay": 21.18000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506260624009184",
+    "customer_id": "378919826661428946",
+    "commercial_id": "3045200005",
+    "order_time": "26/6/2025 06:24:00",
+    "total_pay": 16.309999465942384,
+    "situation": null
+  },
+  {
+    "order_id": "202506260914001984",
+    "customer_id": "206502947383694921",
+    "commercial_id": "1619600004",
+    "order_time": "26/6/2025 09:14:00",
+    "total_pay": 20.6200008392334,
+    "situation": null
+  },
+  {
+    "order_id": "202506260950008000",
+    "customer_id": "674373175298115609",
+    "commercial_id": "3074300005",
+    "order_time": "26/6/2025 09:50:00",
+    "total_pay": 8.489999771118164,
+    "situation": null
+  },
+  {
+    "order_id": "202506270545001504",
+    "customer_id": "156906145758995295",
+    "commercial_id": "1064300005",
+    "order_time": "27/6/2025 05:45:00",
+    "total_pay": 58.09000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506270600006208",
+    "customer_id": "47242105047660209X",
+    "commercial_id": "1064300005",
+    "order_time": "27/6/2025 06:00:00",
+    "total_pay": 14.350000381469727,
+    "situation": null
+  },
+  {
+    "order_id": "202506270606007712",
+    "customer_id": "785000522027848662",
+    "commercial_id": "3045200005",
+    "order_time": "27/6/2025 06:06:00",
+    "total_pay": 96.44000244140625,
+    "situation": null
+  },
+  {
+    "order_id": "202506270708005600",
+    "customer_id": "246118485086129312",
+    "commercial_id": "3074300005",
+    "order_time": "27/6/2025 07:08:00",
+    "total_pay": 45.790000915527347,
+    "situation": null
+  },
+  {
+    "order_id": "202506270712002400",
+    "customer_id": "014721339247273851",
+    "commercial_id": "1064300005",
+    "order_time": "27/6/2025 07:12:00",
+    "total_pay": 66.36000061035156,
+    "situation": null
+  },
+  {
+    "order_id": "202506270800009600",
+    "customer_id": "326124039315895676",
+    "commercial_id": "3074300005",
+    "order_time": "27/6/2025 08:00:00",
+    "total_pay": 12.520000457763672,
+    "situation": null
+  },
+  {
+    "order_id": "202506270803008096",
+    "customer_id": "395656772166080124",
+    "commercial_id": "3074300005",
+    "order_time": "27/6/2025 08:03:00",
+    "total_pay": 61.25,
+    "situation": null
+  },
+  {
+    "order_id": "202506270850001696",
+    "customer_id": "199631778137173723",
+    "commercial_id": "1619600004",
+    "order_time": "27/6/2025 08:50:00",
+    "total_pay": 38.20000076293945,
+    "situation": null
+  },
+  {
+    "order_id": "202506270901008512",
+    "customer_id": "034179215228784315",
+    "commercial_id": "3074300005",
+    "order_time": "27/6/2025 09:01:00",
+    "total_pay": 69.18000030517578,
+    "situation": null
+  },
+  {
+    "order_id": "202506270936003008",
+    "customer_id": "326890810196171381",
+    "commercial_id": "1619600003",
+    "order_time": "27/6/2025 09:36:00",
+    "total_pay": 39.15999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506270950006112",
+    "customer_id": "014721339247273851",
+    "commercial_id": "1619600003",
+    "order_time": "27/6/2025 09:50:00",
+    "total_pay": 24.639999389648439,
+    "situation": null
+  },
+  {
+    "order_id": "202506280616009408",
+    "customer_id": "234395972077878598",
+    "commercial_id": "1064300005",
+    "order_time": "28/6/2025 06:16:00",
+    "total_pay": 91.41999816894531,
+    "situation": null
+  },
+  {
+    "order_id": "202506280707003296",
+    "customer_id": "660555132284217527",
+    "commercial_id": "1064300005",
+    "order_time": "28/6/2025 07:07:00",
+    "total_pay": 9.5,
+    "situation": null
+  },
+  {
+    "order_id": "202506280720006496",
+    "customer_id": "61273002036811332X",
+    "commercial_id": "3045200005",
+    "order_time": "28/6/2025 07:20:00",
+    "total_pay": 88.58000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506280725003904",
+    "customer_id": "870173948777186396",
+    "commercial_id": "3045200005",
+    "order_time": "28/6/2025 07:25:00",
+    "total_pay": 20.690000534057618,
+    "situation": null
+  },
+  {
+    "order_id": "202506280816003712",
+    "customer_id": "786386709000370707",
+    "commercial_id": "1619600004",
+    "order_time": "28/6/2025 08:16:00",
+    "total_pay": 76.62999725341797,
+    "situation": null
+  },
+  {
+    "order_id": "202506280928009504",
+    "customer_id": "837023779472343659",
+    "commercial_id": "3074300005",
+    "order_time": "28/6/2025 09:28:00",
+    "total_pay": 33.59000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506281002006784",
+    "customer_id": "708293228856250284",
+    "commercial_id": "1619600003",
+    "order_time": "28/6/2025 10:02:00",
+    "total_pay": 24.489999771118165,
+    "situation": null
+  },
+  {
+    "order_id": "202506290609003808",
+    "customer_id": "975197615398680224",
+    "commercial_id": "3045200005",
+    "order_time": "29/6/2025 06:09:00",
+    "total_pay": 48.84000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506290639001312",
+    "customer_id": "584520873027706030",
+    "commercial_id": "3045200005",
+    "order_time": "29/6/2025 06:39:00",
+    "total_pay": 72.5,
+    "situation": null
+  },
+  {
+    "order_id": "202506290715001696",
+    "customer_id": "387761377561482605",
+    "commercial_id": "3045200005",
+    "order_time": "29/6/2025 07:15:00",
+    "total_pay": 78.77999877929688,
+    "situation": null
+  },
+  {
+    "order_id": "202506290818004608",
+    "customer_id": "650342157568301938",
+    "commercial_id": "1619600003",
+    "order_time": "29/6/2025 08:18:00",
+    "total_pay": 16.899999618530275,
+    "situation": null
+  },
+  {
+    "order_id": "202506290930001184",
+    "customer_id": "050832963246188732",
+    "commercial_id": "1619600004",
+    "order_time": "29/6/2025 09:30:00",
+    "total_pay": 28.579999923706056,
+    "situation": null
+  },
+  {
+    "order_id": "202506290935008384",
+    "customer_id": "353568099068931355",
+    "commercial_id": "1619600003",
+    "order_time": "29/6/2025 09:35:00",
+    "total_pay": 42.2599983215332,
+    "situation": null
+  },
+  {
+    "order_id": "202506290941005184",
+    "customer_id": "74271688035972645X",
+    "commercial_id": "1619600003",
+    "order_time": "29/6/2025 09:41:00",
+    "total_pay": 44.880001068115237,
+    "situation": null
+  },
+  {
+    "order_id": "202506290944001184",
+    "customer_id": "461976534037892612",
+    "commercial_id": "3074300005",
+    "order_time": "29/6/2025 09:44:00",
+    "total_pay": 64.3499984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506290950006688",
+    "customer_id": "103638938299399744",
+    "commercial_id": "3074300005",
+    "order_time": "29/6/2025 09:50:00",
+    "total_pay": 82.38999938964844,
+    "situation": null
+  },
+  {
+    "order_id": "202506290952009312",
+    "customer_id": "870173948777186396",
+    "commercial_id": "1619600003",
+    "order_time": "29/6/2025 09:52:00",
+    "total_pay": 97.94999694824219,
+    "situation": null
+  },
+  {
+    "order_id": "202506300604001600",
+    "customer_id": "199631778137173723",
+    "commercial_id": "1064300005",
+    "order_time": "30/6/2025 06:04:00",
+    "total_pay": 40.40999984741211,
+    "situation": null
+  },
+  {
+    "order_id": "202506300630001312",
+    "customer_id": "272420179587904174",
+    "commercial_id": "3074300005",
+    "order_time": "30/6/2025 06:30:00",
+    "total_pay": 39.58000183105469,
+    "situation": null
+  },
+  {
+    "order_id": "202506300634005984",
+    "customer_id": "587698991120188245",
+    "commercial_id": "3074300005",
+    "order_time": "30/6/2025 06:34:00",
+    "total_pay": 95.05999755859375,
+    "situation": null
+  },
+  {
+    "order_id": "202506300653004000",
+    "customer_id": "837023779472343659",
+    "commercial_id": "1064300005",
+    "order_time": "30/6/2025 06:53:00",
+    "total_pay": 70.87000274658203,
+    "situation": null
+  },
+  {
+    "order_id": "202506300829002592",
+    "customer_id": "375663768064070433",
+    "commercial_id": "1619600003",
+    "order_time": "30/6/2025 08:29:00",
+    "total_pay": 73.4000015258789,
+    "situation": null
+  },
+  {
+    "order_id": "202506300903009696",
+    "customer_id": "013486984998774246",
+    "commercial_id": "1619600003",
+    "order_time": "30/6/2025 09:03:00",
+    "total_pay": 41.900001525878909,
+    "situation": null
+  },
+  {
+    "order_id": "202506300913001408",
+    "customer_id": "461976534037892612",
+    "commercial_id": "3074300005",
+    "order_time": "30/6/2025 09:13:00",
+    "total_pay": 88.51000213623047,
+    "situation": null
+  },
+  {
+    "order_id": "202506300925009792",
+    "customer_id": "014721339247273851",
+    "commercial_id": "3074300005",
+    "order_time": "30/6/2025 09:25:00",
+    "total_pay": 56.0,
+    "situation": null
+  },
+  {
+    "order_id": "202506300935000992",
+    "customer_id": "86814338307137184X",
+    "commercial_id": "3074300005",
+    "order_time": "30/6/2025 09:35:00",
+    "total_pay": 91.52999877929688,
+    "situation": null
+  }
+]

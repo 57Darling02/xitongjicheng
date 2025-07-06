@@ -2,8 +2,17 @@
     <div style="flex-direction: column;flex: 1;height: 100%;display: flex;">
         <el-space :spacer="spacer" wrap>
 
-            <el-select v-model="selectedTrainNo" filterable remote reserve-keyword placeholder="请输入车次关键字"
-                :remote-method="remoteSearch">
+            <el-select v-model="selectedTrainNo" filterable remote reserve-keyword placeholder="输入车次关键字查询"
+                :remote-method="remoteSearch" :loading="loading">
+                <template #label="{ label, value }">
+                    <span>{{ label }}: </span>
+                    <span style="font-weight: bold">{{ value }}</span>
+                </template>
+                <template #loading>
+                    <svg class="circular" viewBox="0 0 50 50">
+                        <circle class="path" cx="25" cy="25" r="20" fill="none" />
+                    </svg>
+                </template>
                 <el-option v-for="(item, idx) in trainOptions" :key="idx" :label="item.station_train_code"
                     :value="item.train_no">
                     <template #default>
@@ -141,8 +150,8 @@ const columns = [
                 const hours = Math.floor(durationMinutes / 60);
                 const minutes = durationMinutes % 60;
                 let result = ''
-                if(hours) result += `${hours}h`;
-                if(minutes) result += `${minutes}m`;
+                if (hours) result += `${hours}h`;
+                if (minutes) result += `${minutes}m`;
                 return result
                 // return `${hours}:${minutes}`;
             }
@@ -186,4 +195,27 @@ const fetchTrainSchedule = async () => {
 };
 </script>
 
-<style></style>
+<style>
+.el-select-dropdown__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+}
+
+.circular {
+  display: inline;
+  height: 30px;
+  width: 30px;
+  animation: loading-rotate 2s linear infinite;
+}
+.path {
+  animation: loading-dash 1.5s ease-in-out infinite;
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  stroke: var(--el-color-primary);
+  stroke-linecap: round;
+}
+</style>

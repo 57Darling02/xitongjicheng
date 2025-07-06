@@ -11,10 +11,11 @@
                     <template #reference>
                         <el-avatar :src="avatarurl" />
                     </template>
+                    
                     <template #default>
+                        
                         <div class="demo-rich-conent" style="display: flex; gap: 16px; flex-direction: column">
-                            <el-avatar :size="60" :src="avatarurl"
-                                style="margin-bottom: 8px" />
+                            <el-avatar :size="60" :src="avatarurl" style="margin-bottom: 8px" />
                             <div>
                                 <p class="demo-rich-content__name" style="margin: 0; font-weight: 500">
                                     {{ userStore.userInfo.username }}
@@ -24,11 +25,12 @@
                                     @{{ userStore.userInfo.role }}
                                 </p>
                             </div>
-
                             <p class="demo-rich-content__desc" style="display: flex;gap:2px">
                                 可访问模块: <el-tag type="success" v-for="(perm, idx) in permissions">{{ perm }}</el-tag>
                             </p>
+                            <el-button @click="userStore.logout">退出</el-button>
                         </div>
+                        
                     </template>
                 </el-popover>
             </div>
@@ -65,10 +67,7 @@
                                 </template>
                             </el-sub-menu>
                         </template>
-
-
                     </el-menu>
-
                 </el-scrollbar>
             </div>
             <el-main>
@@ -173,6 +172,7 @@ $menu-active-color: #ffd04b;
         justify-content: start;
         padding: 0 var(--el-menu-base-level-padding);
         background-color: transparent;
+
         span,
         .el-icon {
             color: var(--el-menu-text-color);
@@ -184,6 +184,7 @@ $menu-active-color: #ffd04b;
 .el-main {
     background-color: #f5f5f5;
     padding: 20px;
+    flex: 1
 }
 
 
@@ -195,7 +196,7 @@ $menu-active-color: #ffd04b;
 
 #aside {
     background-color: $menu-bg-color;
-    overflow: hidden;
+    overflow-y: hidden;
     --el-menu-bg-color: #545c64;
     --el-menu-text-color: #fff;
     --el-menu-active-color: #ffd04b;

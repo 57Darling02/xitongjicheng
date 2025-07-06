@@ -1,3 +1,4 @@
+import router from '@/router'
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 export const roles = ['admin', 'merchant', 'customer'] as const
@@ -13,7 +14,7 @@ export const useUserStore = defineStore('user', () => {
       if (!isLoggedIn.value) return []
       const permissions = {
         admin: ['1','1-1','1-2'],
-        merchant: ['1'],
+        merchant: ['1','1-3'],
         customer: ['2']
       }
       return permissions[userInfo.value.role] || []
@@ -42,6 +43,7 @@ export const useUserStore = defineStore('user', () => {
   function logout() {
     userInfo.value = { username: '', role: 'merchant' }
     localStorage.removeItem('userInfo')
+    router.push({ name: 'Login' })
   }
 
   function initUser() {
