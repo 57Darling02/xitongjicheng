@@ -91,7 +91,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import type { UploadFile, UploadProps } from 'element-plus'
-import { ElMessage } from 'element-plus'
 import { Plus } from '@element-plus/icons-vue'
 
 // 表单数据
