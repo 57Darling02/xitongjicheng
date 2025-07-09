@@ -75,7 +75,7 @@ const onSubmit = async () => {
     formRef.value.validate((valid: boolean) => {
         if (valid) {
             userStore.login(form.username, form.password, form.role)
-            window.open('/', '_self')
+            // window.open('/', '_self')
         } else {
             ElMessage.error('登录失败');
         }
