@@ -7,7 +7,7 @@ export const roles = ['admin', 'merchant', 'customer'] as const
 export const useUserStore = defineStore('user', () => {
   const userInfo = ref({
     username: '',
-    commercial_id: '',
+    id: '',
     role: 'merchant' as typeof roles[number]
   })
   const isLoggedIn = computed(() => !!userInfo.value.username)
@@ -37,7 +37,14 @@ export const useUserStore = defineStore('user', () => {
     try {
       switch (role) {
         case 'admin':
-          break;
+          userInfo.value = {
+            username: username,
+            id: 'admin',
+            role: role
+          }
+          localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
+          window.open('/', '_self')
+          return true
         case 'merchant':
           const options = {
             method: 'POST',
@@ -51,14 +58,22 @@ export const useUserStore = defineStore('user', () => {
           ElMessage.success('登录成功');
           userInfo.value = {
             username: response.data.username,
-            commercial_id: response.data.commercial_id,
+            id: response.data.commercial_id,
             role: role
           }
           localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
           window.open('/', '_self')
           return true
         case 'customer':
-          break;
+          userInfo.value = {
+            username: username,
+            id: 'admin',
+            role: role
+          }
+          localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
+
+          window.open('/', '_self')
+          return true
         default:
           break;
       }
@@ -70,7 +85,7 @@ export const useUserStore = defineStore('user', () => {
   }
 
   function logout() {
-    userInfo.value = { username: '', commercial_id: '', role: 'merchant' }
+    userInfo.value = { username: '', id: '', role: 'merchant' }
     localStorage.removeItem('userInfo')
     router.push({ name: 'Login' })
   }
