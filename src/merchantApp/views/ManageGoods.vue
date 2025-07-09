@@ -27,9 +27,9 @@
       <el-table-column prop="safety_stock" label="安全库存" width="100" />
       <el-table-column label="操作" width="300">
         <template #default="scope">
-          <el-button @click="handleAddStock(scope.row)">增加库存</el-button>
-          <el-button @click="handleShelve(scope.row)">下架商品</el-button>
-          <el-button @click="handleMore(scope.row)">更多</el-button>
+          <el-button @click="">增加库存</el-button>
+          <el-button @click="handleDownGood(scope.row)">下架商品</el-button>
+          <el-button @click="">更多</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -38,6 +38,7 @@
 
 <script lang="ts" setup>
 import axios from 'axios';
+import { ElMessage } from 'element-plus';
 import { onMounted, ref } from 'vue';
 const loading = ref(false);
 // 查询条件绑定变量
@@ -55,29 +56,7 @@ interface commodity {
   safety_stock: number;
 }
 
-const tableData = ref<commodity[]>([
-  {
-    c_id: 1,
-    commodity_id: 'G001',
-    commodity_situation: '商品1的描述',
-    commodity_name: '商品1',
-    commodity_price: 20.00,
-    commodity_stock: 10,
-    image_url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-    safety_stock: 5,
-  },
-  {
-    c_id: 2,
-    commodity_id: 'G002',
-    commodity_situation: '商品2的描述',
-    commodity_name: '商品2',
-    commodity_price: 15.00,
-    commodity_stock: 5,
-    image_url: '',
-    safety_stock: 3,
-  },
-  // 可继续添加更多模拟数据...
-]);
+const tableData = ref<commodity[]>([]);
 
 // 查询按钮事件
 const handleQuery = async () => {
@@ -97,9 +76,7 @@ const handleQuery = async () => {
     }
   } finally {
     loading.value = false;
-
   }
-
 };
 
 // 新增商品按钮事件
@@ -111,11 +88,19 @@ const handleAddGood =async () => {
 };
 
 // 下架商品按钮事件
-const handleShelve = () => {
-  console.log('执行下架商品操作');
-  // 可结合当前行数据，调用接口下架商品，例如：
-  // const row = scope.row; 
-  // 调用 shelveGoodsApi(row.goodsNo)
+const handleDownGood = async (row: commodity) => {
+  try {
+    const options = {
+      method: 'DELETE',
+      url: `/api/commodity/delete/${row.c_id}`, 
+    };
+    const response = await axios.request(options);
+    console.log(response.data);
+    // 下架成功后重新查询数据
+    await handleQuery();
+  } catch (error) {
+    ElMessage.error(error as string);
+  }
 };
 
 // 更多按钮事件
@@ -129,7 +114,6 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-/* 可根据需要自定义样式，比如图片容器样式等 */
 .el-image {
   border: 1px solid #eee;
 }

@@ -1,6 +1,6 @@
 <template>
   <el-descriptions title="商家信息" direction="vertical" :column="2" border>
-    
+
     <el-descriptions-item label="店铺编号">
       <el-input v-model="form.shopId" disabled />
     </el-descriptions-item>
@@ -16,7 +16,7 @@
     <el-descriptions-item label="店铺名称">
       <el-input v-model="form.shopName" />
     </el-descriptions-item>
-    
+
     <el-descriptions-item label="地理位置">
       <el-row :gutter="10">
         <el-col :span="8">
