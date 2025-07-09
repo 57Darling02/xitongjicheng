@@ -67,6 +67,11 @@ export default defineConfig({
           });
         },
       },
+      '/api': {
+        target: 'http://hw.57d02.cn:5000/api',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      },
     }
   }
 })

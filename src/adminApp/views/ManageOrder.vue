@@ -6,22 +6,13 @@
       <el-input v-model="trainNo" placeholder="车次" style="width: 120px;" />
       <el-input v-model="station" placeholder="车站" style="width: 120px;" />
       <el-input v-model="userId" placeholder="用户ID" style="width: 120px;" />
-      <el-date-picker
-        v-model="departureDate"
-        type="date"
-        placeholder="出发日期"
-        style="width: 160px;"
-      />
+      <el-date-picker v-model="departureDate" type="date" placeholder="出发日期" style="width: 160px;" />
       <el-input v-model="shopName" placeholder="店铺名称" style="width: 160px;" />
       <el-button type="primary" @click="handleQuery">查询</el-button>
       <el-button type="primary" @click="handleStatistics">统计</el-button>
     </el-space>
     <!-- 表格区域 -->
-    <el-table
-      :data="tableData"
-      style="width: 100%; margin-top: 16px;"
-      border
-    >
+    <el-table :data="tableData" style="width: 100%; margin-top: 16px;" border>
       <!-- 多选框列 -->
       <el-table-column type="selection" width="55" />
       <el-table-column prop="orderNo" label="订单编号" width="120" />

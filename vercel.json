@@ -13,6 +13,10 @@
       "destination": "https://www.12306.cn/:path*"
     },
     {
+      "source": "/api/:path*",
+      "destination": "https://hw.57d02.cn:5000/api/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

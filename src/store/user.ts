@@ -1,29 +1,32 @@
 import router from '@/router'
+import axios from "axios";
+
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 export const roles = ['admin', 'merchant', 'customer'] as const
 export const useUserStore = defineStore('user', () => {
   const userInfo = ref({
     username: '',
+    commercial_id: '',
     role: 'merchant' as typeof roles[number]
   })
   const isLoggedIn = computed(() => !!userInfo.value.username)
-  const getPermissions =async () => {
+  const getPermissions = async () => {
     try {
       // Simulate an API call to get permissions based on user role
       if (!isLoggedIn.value) return []
       const permissions = {
-        admin: ['1','1-1','1-2'],
-        merchant: ['1','1-3'],
+        admin: ['1', '1-1', '1-2'],
+        merchant: ['1', '1-3'],
         customer: ['2']
       }
       return permissions[userInfo.value.role] || []
-    }catch{
+    } catch {
       return []
     }
-    
+
   }
-  const hasPermission = async(permission: string) => {
+  const hasPermission = async (permission: string) => {
     const permissions: string[] = await getPermissions()
     if (!permissions.length) return false
     return permissions.includes(permission)
@@ -31,17 +34,43 @@ export const useUserStore = defineStore('user', () => {
 
 
   async function login(username: string, password: string, role: (typeof roles)[number]) {
-    if (username == '' || password == '') return false
-    userInfo.value = {
-      username,
-      role: role
+    try {
+      switch (role) {
+        case 'admin':
+          break;
+        case 'merchant':
+          const options = {
+            method: 'POST',
+            url: '/api/commercial/login',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            data: { username, password }
+          };
+          const response = await axios.request(options);
+          ElMessage.success('登录成功');
+          userInfo.value = {
+            username: response.data.username,
+            commercial_id: response.data.commercial_id,
+            role: role
+          }
+          localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
+          window.open('/', '_self')
+          return true
+        case 'customer':
+          break;
+        default:
+          break;
+      }
+    } catch {
+      ElMessage.error('登录失败');
+      return false
     }
-    localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
-    return true
+
   }
 
   function logout() {
-    userInfo.value = { username: '', role: 'merchant' }
+    userInfo.value = { username: '', commercial_id: '', role: 'merchant' }
     localStorage.removeItem('userInfo')
     router.push({ name: 'Login' })
   }
