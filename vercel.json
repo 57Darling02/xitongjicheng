@@ -14,7 +14,7 @@
     },
     {
       "source": "/api/:path*",
-      "destination": "http://hw.57d02.cn:5000/api/:path*"
+      "destination": "http://laptop6.57d02.cn:5000/api/:path*"
     },
     {
       "source": "/(.*)",
