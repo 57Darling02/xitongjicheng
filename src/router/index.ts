@@ -107,7 +107,7 @@ const routes: RouteRecordRaw[] = [
         component: () => import('@/merchantApp/views/ManageGoods.vue'),
         meta: {
           requiresAuth: true,
-          permission: '1',
+          permission: '1-3',
           title: '商品管理',
         }
       },
@@ -117,7 +117,7 @@ const routes: RouteRecordRaw[] = [
         component: () => import('@/merchantApp/views/ModifyMerchantInformation.vue'),
         meta: {
           requiresAuth: true,
-          permission: '1',
+          permission: '1-3',
           title: '商家信息管理',
         }
       },
