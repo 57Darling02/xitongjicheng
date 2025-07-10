@@ -4,15 +4,15 @@
     <el-descriptions-item label="店铺编号">
       <el-input v-model="form.shopId" disabled />
     </el-descriptions-item>
-    <el-descriptions-item :rowspan="4" label="头像" align="center">
-      <el-upload class="avatar-uploader" action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
-        :show-file-list="false" :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload">
-        <img v-if="imageUrl" :src="imageUrl" class="avatar" style="width: 100px; height: 100px" />
-        <el-icon v-else class="avatar-uploader-icon" style="width: 100px; height: 100px">
-          <Plus />
-        </el-icon>
-      </el-upload>
-    </el-descriptions-item>
+     <el-descriptions-item :rowspan="4" label="头像" align="center">
+    <el-upload class="avatar-uploader" action="/api/commercial/upload_avatar"
+      :show-file-list="false" :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload">
+      <img v-if="imageUrl" :src="imageUrl" class="avatar" style="width: 100px; height: 100px" />
+      <el-icon v-else class="avatar-uploader-icon" style="width: 100px; height: 100px">
+        <Plus />
+      </el-icon>
+    </el-upload>
+  </el-descriptions-item>
     <el-descriptions-item label="店铺名称">
       <el-input v-model="form.shopName" />
     </el-descriptions-item>
@@ -180,22 +180,17 @@ const handleRemove = (file: UploadFile, fileList: UploadFile[]) => {
 // 头像上传相关
 const imageUrl = ref('')
 
-const handleAvatarSuccess: UploadProps['onSuccess'] = (
-  response,
-  uploadFile
-) => {
-  imageUrl.value = URL.createObjectURL(uploadFile.raw!)
+const handleAvatarSuccess: UploadProps['onSuccess'] = (response) => {
+  if (response.avatar_url) {
+    imageUrl.value = response.avatar_url;
+    ElMessage.success('头像上传成功');
+  } else {
+    ElMessage.error('头像上传失败');
+  }
 }
 
 const beforeAvatarUpload: UploadProps['beforeUpload'] = (rawFile) => {
-  if (rawFile.type !== 'image/jpeg') {
-    ElMessage.error('头像图片必须为 JPG 格式！')
-    return false
-  } else if (rawFile.size / 1024 / 1024 > 2) {
-    ElMessage.error('头像图片大小不能超过 2MB！')
-    return false
-  }
-  return true
+  return true;
 }
 // 获取商家信息
 const fetchMerchantInfo = async () => {

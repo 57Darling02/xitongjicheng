@@ -2,88 +2,120 @@
   <div style="padding: 16px;">
     <!-- 查询条件区域 -->
     <el-space wrap :size="12">
-      <el-date-picker v-model="departureDate" type="date" placeholder="出发日期" style="width: 160px;" />
+      <el-input v-model="userName" placeholder="用户真名" style="width: 120px;" />
+      <el-input v-model="phoneNumber" placeholder="用户手机号" style="width: 140px;" />
       <el-input v-model="trainNo" placeholder="车次" style="width: 120px;" />
-      <el-input v-model="seat" placeholder="座位" style="width: 100px;" />
-      <el-input v-model="userAccount" placeholder="用户账号" style="width: 120px;" />
-      <el-input v-model="userName" placeholder="用户姓名" style="width: 120px;" />
-      <el-input v-model="phone" placeholder="手机号码" style="width: 160px;" />
+      <el-input v-model="userAccount" placeholder="用户名" style="width: 120px;" />
+      <el-input v-model="currentPage" type="number" placeholder="页码" style="width: 100px;" />
+      <el-input v-model="perPage" type="number" placeholder="每页数量" style="width: 100px;" />
       <el-button type="primary" @click="handleQuery">查询</el-button>
     </el-space>
     <!-- 表格区域 -->
-    <el-table :data="tableData" style="width: 100%; margin-top: 16px;" border>
+    <el-table :data="tableData" style="width: 100%; margin-top: 16px;" v-loading="loading" border>
       <!-- 多选框列 -->
       <el-table-column type="selection" width="55" />
-      <el-table-column prop="departureDate" label="出发日期" width="120" />
-      <el-table-column prop="trainNo" label="车次" width="100" />
-      <el-table-column prop="seat" label="座位" width="80" />
-      <el-table-column prop="userAccount" label="用户账号" width="120" />
-      <el-table-column prop="userName" label="用户姓名" width="120" />
-      <el-table-column prop="phone" label="手机号码" width="140" />
-      <el-table-column prop="nickname" label="昵称" width="100" />
-      <el-table-column prop="frequentTrainNo" label="常乘车次" width="120" />
-      <el-table-column label="操作" width="180">
-        <template #default>
-          <el-button>编辑</el-button>
+      <el-table-column prop="customer_id" label="用户 ID" width="160" />
+      <el-table-column prop="username" label="用户名" width="120" />
+      <el-table-column prop="pnumber" label="用户手机号" width="140" />
+      <el-table-column prop="train" label="车次" width="100" />
+      <el-table-column prop="sits" label="座位" width="80" />
+      <el-table-column label="操作" width="280">
+        <template #default="scope">
+          <el-button @click="handleViewDetail(scope.row.customer_id)">查看详情</el-button>
           <el-button>更多</el-button>
         </template>
       </el-table-column>
     </el-table>
+    <el-dialog v-model="detailDialogVisible" title="用户详情" width="30%">
+      <el-descriptions :column="1" border>
+        <el-descriptions-item label="用户 ID">{{ currentCustomerDetail.customer_id }}</el-descriptions-item>
+        <el-descriptions-item label="用户真名">{{ currentCustomerDetail.customer_name }}</el-descriptions-item>
+        <el-descriptions-item label="用户名">{{ currentCustomerDetail.username }}</el-descriptions-item>
+        <el-descriptions-item label="用户手机号">{{ currentCustomerDetail.pnumber }}</el-descriptions-item>
+        <el-descriptions-item label="车次">{{ currentCustomerDetail.train }}</el-descriptions-item>
+        <el-descriptions-item label="座位">{{ currentCustomerDetail.sits }}</el-descriptions-item>
+        <el-descriptions-item label="支付信息">
+          {{ currentCustomerDetail.pay || '无' }}
+        </el-descriptions-item>
+      </el-descriptions>
+      <template #footer>
+        <span class="dialog-footer">
+          <el-button @click="detailDialogVisible = false">关闭</el-button>
+        </span>
+      </template>
+    </el-dialog>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-
+import { onMounted, ref } from 'vue';
+import axios from 'axios';
+import { ElMessage } from 'element-plus';
+const loading = ref(false)
 // 查询条件绑定变量
-const departureDate = ref<Date | null>(null);
-const trainNo = ref('');
-const seat = ref('');
-const userAccount = ref('');
 const userName = ref('');
-const phone = ref('');
+const phoneNumber = ref('');
+const trainNo = ref('');
+const userAccount = ref('');
+const currentPage = ref(1);
+const perPage = ref(5);
 
 // 表格数据
-const tableData = ref([
-  {
-    departureDate: '2025-07-10',
-    trainNo: 'G1001',
-    seat: 'A01',
-    userAccount: 'user001',
-    userName: '张三',
-    phone: '13800138000',
-    nickname: '小张',
-    frequentTrainNo: 'G1001',
-  },
-  {
-    departureDate: '2025-07-11',
-    trainNo: 'G1002',
-    seat: 'B02',
-    userAccount: 'user002',
-    userName: '李四',
-    phone: '13900139000',
-    nickname: '小李',
-    frequentTrainNo: 'G1002',
-  },
-  // 可继续添加更多模拟数据...
-]);
-
+const tableData = ref([]);
+// 详情弹窗相关
+const detailDialogVisible = ref(false);
+const currentCustomerDetail = ref({
+  customer_id: '',
+  customer_name: '',
+  pay: null,
+  pnumber: '',
+  sits: '',
+  train: '',
+  username: ''
+});
 // 查询按钮事件
-const handleQuery = () => {
-  console.log('查询条件：', {
-    departureDate: departureDate.value
-      ? departureDate.value.toLocaleDateString()
-      : '',
-    trainNo: trainNo.value,
-    seat: seat.value,
-    userAccount: userAccount.value,
-    userName: userName.value,
-    phone: phone.value,
-  });
-  // 实际可根据条件向后端请求数据，更新 tableData
+const handleQuery = async () => {
+  loading.value = true
+  const params = {
+    customer_name: userName.value,
+    pnumber: phoneNumber.value,
+    train: trainNo.value,
+    username: userAccount.value,
+    page: currentPage.value,
+    per_page: perPage.value
+  };
+
+  try {
+    const response = await axios.get('/api/admin/customers', { params });
+    if (response.data && Array.isArray(response.data.customers)) {
+      tableData.value = response.data.customers;
+    }
+  } catch (error) {
+    ElMessage.error('查询用户数据失败');
+    console.error(error);
+  } finally {
+    loading.value = false
+  }
 };
+
+// 查看详情事件
+const handleViewDetail = async (customerId: string) => {
+  try {
+    const response = await axios.get(`/api/admin/customers/${customerId}`);
+    if (response.data) {
+      currentCustomerDetail.value = response.data;
+      detailDialogVisible.value = true;
+      ElMessage.success('获取用户详情成功');
+    }
+  } catch (error) {
+    ElMessage.error('获取用户详情失败');
+    console.error(error);
+  }
+};
+
+onMounted(() => {
+  handleQuery();
+})
 </script>
 
-<style scoped>
-/* 可根据需要自定义样式 */
-</style>
+<style></style>

@@ -13,7 +13,6 @@ export const useUserStore = defineStore('user', () => {
   const isLoggedIn = computed(() => !!userInfo.value.username)
   const getPermissions = async () => {
     try {
-      // Simulate an API call to get permissions based on user role
       if (!isLoggedIn.value) return []
       const permissions = {
         admin: ['1', '1-1', '1-2'],
@@ -35,8 +34,20 @@ export const useUserStore = defineStore('user', () => {
 
   async function login(username: string, password: string, role: (typeof roles)[number]) {
     try {
+      let options;
+      let response;
       switch (role) {
         case 'admin':
+          options = {
+            method: 'POST',
+            url: '/api/admin/login',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            data: { username, password }
+          };
+          response = await axios.request(options);
+          ElMessage.success('登录成功');
           userInfo.value = {
             username: username,
             id: 'admin',
@@ -46,7 +57,7 @@ export const useUserStore = defineStore('user', () => {
           window.open('/', '_self')
           return true
         case 'merchant':
-          const options = {
+          options = {
             method: 'POST',
             url: '/api/commercial/login',
             headers: {
@@ -54,7 +65,7 @@ export const useUserStore = defineStore('user', () => {
             },
             data: { username, password }
           };
-          const response = await axios.request(options);
+          response = await axios.request(options);
           ElMessage.success('登录成功');
           userInfo.value = {
             username: response.data.username,
@@ -83,7 +94,69 @@ export const useUserStore = defineStore('user', () => {
     }
 
   }
+    async function register(username: string, password: string, role: (typeof roles)[number]) {
+    try {
+      let options;
+      let response;
+      switch (role) {
+        case 'admin':
+          options = {
+            method: 'POST',
+            url: '/api/admin/login',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            data: { username, password }
+          };
+          response = await axios.request(options);
+          ElMessage.success('登录成功');
+          userInfo.value = {
+            username: username,
+            id: 'admin',
+            role: role
+          }
+          localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
+          window.open('/', '_self')
+          return true
+        case 'merchant':
+          options = {
+            method: 'POST',
+            url: '/api/commercial/register',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            data: { username, password }
+          };
+          response = await axios.request(options);
+          ElMessage.success(response.data.message);
+          userInfo.value = {
+            username: response.data.username,
+            id: response.data.commercial_id,
+            role: role
+          }
+          localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
+          window.open('/', '_self')
+          return true
+        case 'customer':
+          userInfo.value = {
+            username: username,
+            id: 'admin',
+            role: role
+          }
+          localStorage.setItem('userInfo', JSON.stringify(userInfo.value))
+          window.open('/', '_self')
+          return true
+        default:
+          break;
+      }
+    } catch {
+      ElMessage.error('登录失败');
+      return false
+    }
 
+  }
+
+  
   function logout() {
     userInfo.value = { username: '', id: '', role: 'merchant' }
     localStorage.removeItem('userInfo')
@@ -104,6 +177,7 @@ export const useUserStore = defineStore('user', () => {
     logout,
     initUser,
     getPermissions,
-    hasPermission
+    hasPermission,
+    register
   }
 })  
